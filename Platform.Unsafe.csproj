@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>LinksPlatform's Platform.Unsafe Class Library</Description>
+    <Copyright>Konstantin Diachenko</Copyright>
+    <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>Konstantin Diachenko</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Platform.Unsafe</AssemblyName>
+    <PackageId>Platform.Unsafe</PackageId>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageTags>LinksPlatform;Unsafe;IntPtrHelpers;IntPtrExtensions;MemoryHelpers;StructureExtensions;StructureHelpers</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/0a9177c11892ebb2fe467dc3ea9eaf5a5588f610/doc/Avatar-rainbow.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/linksplatform/Unsafe</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/linksplatform/Unsafe/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/linksplatform/Unsafe</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Platform.Exceptions" Version="0.0.1" />
+    <PackageReference Include="Platform.Reflection" Version="0.0.1" />
+    <PackageReference Include="Platform.Reflection.Sigil" Version="0.0.2" />
+    <PackageReference Include="Platform.Numbers" Version="0.0.1" />
+  </ItemGroup>
+
+</Project>
