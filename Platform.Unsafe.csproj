@@ -13,7 +13,7 @@
     <PackageTags>LinksPlatform;Unsafe;IntPtrHelpers;IntPtrExtensions;MemoryHelpers;StructureExtensions;StructureHelpers</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/0a9177c11892ebb2fe467dc3ea9eaf5a5588f610/doc/Avatar-rainbow.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/linksplatform/Unsafe</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/linksplatform/Unsafe/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/linksplatform/Unsafe</RepositoryUrl>
