@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using Platform.Reflection;
@@ -13,7 +14,7 @@ namespace Platform.Unsafe
 
         static IntPtrHelpers()
         {
-            DelegateHelpers.Compile(out GetValue, emiter =>
+            GetValue = DelegateHelpers.Compile<Func<IntPtr, T>>(emiter =>
             {
                 if (CachedTypeInfo<T>.IsNumeric)
                 {
@@ -24,12 +25,12 @@ namespace Platform.Unsafe
                 else
                 {
                     emiter.LoadArguments(0);
-                    emiter.Call(typeof(Marshal).GetGenericMethod("PtrToStructure", new[] { typeof(T) }, new[] { typeof(IntPtr), typeof(Type), typeof(bool) }));
+                    emiter.Call(typeof(Marshal).GetGenericMethod("PtrToStructure", Types.Get<T>().ToArray(), Types<IntPtr, Type, bool>.List.ToArray())); ;
                     emiter.Return();
                 }
             });
 
-            DelegateHelpers.Compile(out SetValue, emiter =>
+            SetValue = DelegateHelpers.Compile<Action<IntPtr, T>>(emiter =>
             {
                 if (CachedTypeInfo<T>.IsNumeric)
                 {
@@ -41,7 +42,7 @@ namespace Platform.Unsafe
                 {
                     emiter.LoadArguments(0, 1);
                     emiter.LoadConstant(true);
-                    emiter.Call(typeof(Marshal).GetTypeInfo().GetMethod("StructureToPtr", new[] { typeof(object), typeof(IntPtr), typeof(bool) }));
+                    emiter.Call(typeof(Marshal).GetTypeInfo().GetMethod("StructureToPtr", Types<object, IntPtr, bool>.List.ToArray()));
                     emiter.Return();
                 }
             });
