@@ -29,7 +29,6 @@ namespace Platform.Unsafe
                     emiter.Return();
                 }
             });
-
             SetValue = DelegateHelpers.Compile<Action<IntPtr, T>>(emiter =>
             {
                 if (CachedTypeInfo<T>.IsNumeric)
