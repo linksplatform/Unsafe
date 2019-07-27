@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Platform.Unsafe
 {
-    public unsafe class MemoryHelpers
+    public static unsafe class MemoryHelpers
     {
         /// <remarks>
         /// TODO: Test is it a correct algorithm.
