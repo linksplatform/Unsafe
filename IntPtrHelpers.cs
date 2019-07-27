@@ -14,7 +14,13 @@ namespace Platform.Unsafe
 
         static IntPtrHelpers()
         {
-            GetValue = DelegateHelpers.Compile<Func<IntPtr, T>>(emiter =>
+            GetValue = CompileGetValueDelegate();
+            SetValue = CompileSetValueDelegate();
+        }
+
+        static private Func<IntPtr, T> CompileGetValueDelegate()
+        {
+            return DelegateHelpers.Compile<Func<IntPtr, T>>(emiter =>
             {
                 if (CachedTypeInfo<T>.IsNumeric)
                 {
@@ -29,7 +35,11 @@ namespace Platform.Unsafe
                     emiter.Return();
                 }
             });
-            SetValue = DelegateHelpers.Compile<Action<IntPtr, T>>(emiter =>
+        }
+
+        static private Action<IntPtr, T> CompileSetValueDelegate()
+        {
+            return DelegateHelpers.Compile<Action<IntPtr, T>>(emiter =>
             {
                 if (CachedTypeInfo<T>.IsNumeric)
                 {
