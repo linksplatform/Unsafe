@@ -25,7 +25,7 @@ namespace Platform.Unsafe
                 else
                 {
                     emiter.LoadArguments(0);
-                    emiter.Call(typeof(Marshal).GetGenericMethod("PtrToStructure", Types.Get<T>().ToArray(), Types<IntPtr, Type, bool>.List.ToArray())); ;
+                    emiter.Call(typeof(Marshal).GetGenericMethod("PtrToStructure", Types.Get<T>().ToArray(), Types<IntPtr, Type, bool>.List.ToArray()));
                     emiter.Return();
                 }
             });
