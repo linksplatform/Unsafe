@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using Platform.Reflection;
@@ -31,7 +30,7 @@ namespace Platform.Unsafe
                 else
                 {
                     emiter.LoadArguments(0);
-                    emiter.Call(typeof(Marshal).GetGenericMethod("PtrToStructure", Types<T>.Array.ToArray(), Types<IntPtr, Type, bool>.List.ToArray()));
+                    emiter.Call(typeof(Marshal).GetGenericMethod(nameof(Marshal.PtrToStructure), Types<T>.Array, Types<IntPtr, Type, bool>.Array));
                     emiter.Return();
                 }
             });
@@ -51,7 +50,7 @@ namespace Platform.Unsafe
                 {
                     emiter.LoadArguments(0, 1);
                     emiter.LoadConstant(true);
-                    emiter.Call(typeof(Marshal).GetTypeInfo().GetMethod("StructureToPtr", Types<object, IntPtr, bool>.List.ToArray()));
+                    emiter.Call(typeof(Marshal).GetTypeInfo().GetMethod(nameof(Marshal.StructureToPtr), Types<object, IntPtr, bool>.Array));
                     emiter.Return();
                 }
             });
