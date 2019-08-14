@@ -7,10 +7,10 @@ namespace Platform.Unsafe
     public static class IntPtrExtensions
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TElement GetValue<TElement>(this IntPtr pointer) => IntPtrHelpers<TElement>.GetValue(pointer);
+        public static TElement GetValue<TElement>(this IntPtr pointer) => IntPtr<TElement>.GetValue(pointer);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void SetValue<TElement>(this IntPtr pointer, TElement value) => IntPtrHelpers<TElement>.SetValue(pointer, value);
+        public static void SetValue<TElement>(this IntPtr pointer, TElement value) => IntPtr<TElement>.SetValue(pointer, value);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static IntPtr GetElement(this IntPtr pointer, int elementSize, int index) => pointer + (elementSize * index);

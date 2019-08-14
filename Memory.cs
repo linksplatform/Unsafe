@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Platform.Unsafe
 {
-    public static unsafe class MemoryHelpers
+    public static unsafe class Memory
     {
         public static void ZeroMemory(void* pointer, long capacity)
         {

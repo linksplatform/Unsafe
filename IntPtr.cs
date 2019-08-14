@@ -6,12 +6,12 @@ using Platform.Reflection.Sigil;
 
 namespace Platform.Unsafe
 {
-    public static class IntPtrHelpers<T>
+    public static class IntPtr<T>
     {
         public static readonly Func<IntPtr, T> GetValue;
         public static readonly Action<IntPtr, T> SetValue;
 
-        static IntPtrHelpers()
+        static IntPtr()
         {
             GetValue = CompileGetValueDelegate();
             SetValue = CompileSetValueDelegate();

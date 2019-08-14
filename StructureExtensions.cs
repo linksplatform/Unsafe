@@ -1,5 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using Platform.Exceptions;
 using Platform.Collections;
 
@@ -10,7 +9,7 @@ namespace Platform.Unsafe
         public static byte[] ToBytes<TStruct>(this TStruct obj)
             where TStruct : struct
         {
-            var structureSize = StructureHelpers.SizeOf<TStruct>();
+            var structureSize = Structure.SizeOf<TStruct>();
             var bytes = new byte[structureSize];
             var pointer = Marshal.AllocHGlobal(structureSize);
             Marshal.StructureToPtr(obj, pointer, true);
@@ -23,7 +22,7 @@ namespace Platform.Unsafe
             where TTStruct : struct
         {
             Ensure.Always.ArgumentNotEmpty(bytes, nameof(bytes));
-            var structureSize = StructureHelpers.SizeOf<TTStruct>();
+            var structureSize = Structure.SizeOf<TTStruct>();
             Ensure.Always.ArgumentMeetsCriteria(array => array.Length == structureSize, bytes, nameof(bytes), "Bytes array should be the same length as struct size.");
             var pointer = Marshal.AllocHGlobal(structureSize);
             Marshal.Copy(bytes, 0, pointer, structureSize);

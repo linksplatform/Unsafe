@@ -2,7 +2,7 @@
 
 namespace Platform.Unsafe
 {
-    public static class StructureHelpers
+    public static class Structure
     {
         /// <summary>
         /// <para>
