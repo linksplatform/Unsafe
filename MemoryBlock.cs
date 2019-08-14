@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 
 namespace Platform.Unsafe
 {
-    public static unsafe class Memory
+    public static unsafe class MemoryBlock
     {
-        public static void ZeroMemory(void* pointer, long capacity)
+        public static void Zero(void* pointer, long capacity)
         {
             var ulongs = capacity / sizeof(ulong);
             Parallel.ForEach(Partitioner.Create(0, ulongs), range =>
