@@ -10,11 +10,11 @@ namespace Platform.Unsafe
         /// <summary>
         /// <para>
         /// Returns the size of an unmanaged type in bytes.
-        /// This method do this without throwing exceptions for generic types as <see cref="Marshal.SizeOf{T}"/> and <see cref="Marshal.SizeOf(System.Type)"/> do.
+        /// This method do this without throwing exceptions for generic types as <see cref="Marshal.SizeOf{T}()"/> and <see cref="Marshal.SizeOf(System.Type)"/> do.
         /// </para>
         /// <para>
         /// Возвращает размер неуправляемого типа в байтах.
-        /// Этот метод делает это без выбрасывания исключений для универсальных типов, как это делают<see cref = "Marshal.SizeOf {T}" /> и < see cref = "Marshal.SizeOf (System.Type)" />.
+        /// Этот метод делает это без выбрасывания исключений для универсальных типов, как это делают <see cref="Marshal.SizeOf{T}()"/> и <see cref="Marshal.SizeOf(System.Type)"/>.
         /// </para>
         /// </summary>
         /// <remarks>
