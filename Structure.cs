@@ -2,7 +2,8 @@
 
 namespace Platform.Unsafe
 {
-    public static class Structure
+    public static class Structure<TStruct>
+        where TStruct : struct
     {
         /// <summary>
         /// <para>
@@ -30,6 +31,6 @@ namespace Platform.Unsafe
         /// Обратите внимание, что это поведение может быть изменено в будущих версиях.NET
         /// </para>
         /// </remarks>
-        public static int SizeOf<TStruct>() where TStruct : struct => Marshal.SizeOf(default(TStruct));
+        public static int Size { get; } = Marshal.SizeOf(default(TStruct));
     }
 }

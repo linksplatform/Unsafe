@@ -7,7 +7,7 @@ namespace Platform.Unsafe
         public static byte[] ToBytes<TStruct>(this TStruct obj)
             where TStruct : struct
         {
-            var structureSize = Structure.SizeOf<TStruct>();
+            var structureSize = Structure<TStruct>.Size;
             var bytes = new byte[structureSize];
             var pointer = Marshal.AllocHGlobal(structureSize);
             Marshal.StructureToPtr(obj, pointer, true);
