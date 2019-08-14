@@ -19,18 +19,32 @@ namespace Platform.Unsafe
         /// </summary>
         /// <remarks>
         /// <para>
-        /// Based on proposed solution at https://stackoverflow.com/a/18167584/710069
-        /// For actual differences in .NET code see:
-        /// https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L202
-        /// https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L219-L222
-        /// Note that this behaviour can be changed in future versions of .NET
+        /// Implemented based on <see href="https://stackoverflow.com/a/18167584/710069">proposed solution</see> at StackOverflow.
         /// </para>
         /// <para>
-        /// На основе предложенного решения https://stackoverflow.com/a/18167584/710069
-        /// Фактические различия в коде .NET:
-        /// https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L202
-        /// https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L219-L222
-        /// Обратите внимание, что это поведение может быть изменено в будущих версиях.NET
+        /// Actual differences: 
+        /// <a href="https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L202">code of</a>
+        /// <see cref="Marshal.SizeOf(object)"/>
+        /// and
+        /// <a href="https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L219-L222">code of</a>
+        /// <see cref="Marshal.SizeOf(System.Type)"/>
+        /// </para>
+        /// <para>
+        /// Note that this behaviour can be changed in future versions of .NET.
+        /// </para>
+        /// <para>
+        /// Реализовано на основе <see href="https://stackoverflow.com/a/18167584/710069">предложенного решения</see> в StackOverflow.
+        /// </para>
+        /// <para>
+        /// Фактические различия:
+        /// <a href="https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L202">код</a>
+        /// <see cref="Marshal.SizeOf(object)"/>
+        /// и
+        /// <a href="https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L219-L222">код</a>
+        /// <see cref="Marshal.SizeOf(System.Type)"/>
+        /// </para>
+        /// <para>
+        /// Обратите внимание, что это поведение может быть изменено в будущих версиях .NET.
         /// </para>
         /// </remarks>
         public static int Size { get; } = Marshal.SizeOf(default(TStruct));
