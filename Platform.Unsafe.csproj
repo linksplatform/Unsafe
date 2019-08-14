@@ -4,13 +4,13 @@
     <Description>LinksPlatform's Platform.Unsafe Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
-    <VersionPrefix>0.0.2</VersionPrefix>
+    <VersionPrefix>0.1.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Platform.Unsafe</AssemblyName>
     <PackageId>Platform.Unsafe</PackageId>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <PackageTags>LinksPlatform;Unsafe;IntPtrHelpers;IntPtrExtensions;MemoryHelpers;StructureExtensions;StructureHelpers</PackageTags>
+    <PackageTags>LinksPlatform;Unsafe;IntPtr;IntPtrExtensions;MemoryBlock;Structure;StructureExtensions;ByteArrayExtensions</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Unsafe</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -22,10 +22,18 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>Platform.Reflection dependency updated from 0.0.1 to 0.0.3.
-Platform.Reflection.Sigil dependency updated  from 0.0.2 to 0.0.3.
-Platform.Numbers dependency updated  from 0.0.1 to 0.0.2.
-Refactoring and issues fix.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Numbers dependency updated from 0.0.2 to 0.1.0.
+Duplicate dependencies removed.
+Using new Platform.Exceptions.EnsureExtensions.ArgumentMeetsCriteria.
+Classes renamed to a shorter versions.
+MemoryHelpers class renamed to MemoryBlock.
+`Structure.SizeOf&lt;TStruct&gt;()` method converted to cached property `Structure&lt;TStruct&gt;.Size`.
+ByteArrayExtensions forked from StructureExtensions.
+XML documentation file generation turned on.
+Travis CI connected.
+Refactoring, issues fix.
+
+This release is not backward compatible with 0.0.2 release.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
