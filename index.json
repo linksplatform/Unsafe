@@ -1,0 +1,42 @@
+{
+  "README.html": {
+    "href": "README.html",
+    "title": "Unsafe | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Unsafe LinksPlatform's Platform.Unsafe Class Library. Namespace: Platform.Unsafe Forked from: Konard/LinksPlatform/Platform/Platform.Helpers/Unsafe NuGet package: Platform.Unsafe Documentation PDF file with code for e-readers. Depend on Platform.Numbers Dependent libraries Platform.Collections.Methods Platform.IO Mystery files .travis.yml - Travis CI build configuration. docfx.json and toc.yml - DocFX build configuration. format-document.sh - script for formating tex file for generating PDF from it. format-csharp-files.py - script for formating single .cs file as a part of tex file. generate-pdf.sh - script that generates PDF with code for e-readers. publish-docs.sh - script that publishes generated documentation and PDF with code for e-readers to gh-pages branch. push-nuget.bat - Windows script for publishing current version of NuGet package."
+  },
+  "api/Platform.Unsafe.ByteArrayExtensions.html": {
+    "href": "api/Platform.Unsafe.ByteArrayExtensions.html",
+    "title": "Class ByteArrayExtensions | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class ByteArrayExtensions Inheritance Object ByteArrayExtensions Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class ByteArrayExtensions Methods | Improve this Doc View Source ToStructure<TTStruct>(Byte[]) Declaration public static TTStruct ToStructure<TTStruct>(this byte[] bytes) where TTStruct : struct Parameters Type Name Description Byte [] bytes Returns Type Description TTStruct Type Parameters Name Description TTStruct"
+  },
+  "api/Platform.Unsafe.IntPtr-1.html": {
+    "href": "api/Platform.Unsafe.IntPtr-1.html",
+    "title": "Class IntPtr<T> | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class IntPtr<T> Inheritance Object IntPtr<T> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class IntPtr<T> Type Parameters Name Description T Fields | Improve this Doc View Source GetValue Declaration public static readonly Func<IntPtr, T> GetValue Field Value Type Description Func < IntPtr , T> | Improve this Doc View Source SetValue Declaration public static readonly Action<IntPtr, T> SetValue Field Value Type Description Action < IntPtr , T>"
+  },
+  "api/Platform.Unsafe.Structure-1.html": {
+    "href": "api/Platform.Unsafe.Structure-1.html",
+    "title": "Class Structure<TStruct> | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class Structure<TStruct> Inheritance Object Structure<TStruct> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class Structure<TStruct> where TStruct : struct Type Parameters Name Description TStruct Properties | Improve this Doc View Source Size Declaration public static int Size { get; } Property Value Type Description Int32"
+  },
+  "api/Platform.Unsafe.MemoryBlock.html": {
+    "href": "api/Platform.Unsafe.MemoryBlock.html",
+    "title": "Class MemoryBlock | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class MemoryBlock Inheritance Object MemoryBlock Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class MemoryBlock Methods | Improve this Doc View Source Zero(Void*, Int64) Declaration public static void Zero(void *pointer, long capacity) Parameters Type Name Description Void * pointer Int64 capacity"
+  },
+  "api/Platform.Unsafe.html": {
+    "href": "api/Platform.Unsafe.html",
+    "title": "Namespace Platform.Unsafe | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Namespace Platform.Unsafe Classes ByteArrayExtensions IntPtr<T> IntPtrExtensions MemoryBlock Structure<TStruct> StructureExtensions"
+  },
+  "api/Platform.Unsafe.StructureExtensions.html": {
+    "href": "api/Platform.Unsafe.StructureExtensions.html",
+    "title": "Class StructureExtensions | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class StructureExtensions Inheritance Object StructureExtensions Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class StructureExtensions Methods | Improve this Doc View Source ToBytes<TStruct>(TStruct) Declaration public static byte[] ToBytes<TStruct>(this TStruct obj) where TStruct : struct Parameters Type Name Description TStruct obj Returns Type Description Byte [] Type Parameters Name Description TStruct"
+  },
+  "api/Platform.Unsafe.IntPtrExtensions.html": {
+    "href": "api/Platform.Unsafe.IntPtrExtensions.html",
+    "title": "Class IntPtrExtensions | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class IntPtrExtensions Inheritance Object IntPtrExtensions Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class IntPtrExtensions Methods | Improve this Doc View Source GetElement(IntPtr, Int32, Int32) Declaration public static IntPtr GetElement(this IntPtr pointer, int elementSize, int index) Parameters Type Name Description IntPtr pointer Int32 elementSize Int32 index Returns Type Description IntPtr | Improve this Doc View Source GetElement(IntPtr, Int64, Int64) Declaration public static IntPtr GetElement(this IntPtr pointer, long elementSize, long index) Parameters Type Name Description IntPtr pointer Int64 elementSize Int64 index Returns Type Description IntPtr | Improve this Doc View Source GetElement<TIndex>(IntPtr, Int32, TIndex) Declaration public static IntPtr GetElement<TIndex>(this IntPtr pointer, int elementSize, TIndex index) Parameters Type Name Description IntPtr pointer Int32 elementSize TIndex index Returns Type Description IntPtr Type Parameters Name Description TIndex | Improve this Doc View Source GetValue<TElement>(IntPtr) Declaration public static TElement GetValue<TElement>(this IntPtr pointer) Parameters Type Name Description IntPtr pointer Returns Type Description TElement Type Parameters Name Description TElement | Improve this Doc View Source SetValue<TElement>(IntPtr, TElement) Declaration public static void SetValue<TElement>(this IntPtr pointer, TElement value) Parameters Type Name Description IntPtr pointer TElement value Type Parameters Name Description TElement"
+  }
+}

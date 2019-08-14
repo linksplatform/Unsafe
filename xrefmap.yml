@@ -1,0 +1,189 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Platform.Unsafe
+  name: Platform.Unsafe
+  href: api/Platform.Unsafe.html
+  commentId: N:Platform.Unsafe
+  fullName: Platform.Unsafe
+  nameWithType: Platform.Unsafe
+- uid: Platform.Unsafe.ByteArrayExtensions
+  name: ByteArrayExtensions
+  href: api/Platform.Unsafe.ByteArrayExtensions.html
+  commentId: T:Platform.Unsafe.ByteArrayExtensions
+  fullName: Platform.Unsafe.ByteArrayExtensions
+  nameWithType: ByteArrayExtensions
+- uid: Platform.Unsafe.ByteArrayExtensions.ToStructure*
+  name: ToStructure
+  href: api/Platform.Unsafe.ByteArrayExtensions.html#Platform_Unsafe_ByteArrayExtensions_ToStructure_
+  commentId: Overload:Platform.Unsafe.ByteArrayExtensions.ToStructure
+  isSpec: "True"
+  fullName: Platform.Unsafe.ByteArrayExtensions.ToStructure
+  nameWithType: ByteArrayExtensions.ToStructure
+- uid: Platform.Unsafe.ByteArrayExtensions.ToStructure``1(System.Byte[])
+  name: ToStructure<TTStruct>(Byte[])
+  href: api/Platform.Unsafe.ByteArrayExtensions.html#Platform_Unsafe_ByteArrayExtensions_ToStructure__1_System_Byte___
+  commentId: M:Platform.Unsafe.ByteArrayExtensions.ToStructure``1(System.Byte[])
+  name.vb: ToStructure(Of TTStruct)(Byte())
+  fullName: Platform.Unsafe.ByteArrayExtensions.ToStructure<TTStruct>(System.Byte[])
+  fullName.vb: Platform.Unsafe.ByteArrayExtensions.ToStructure(Of TTStruct)(System.Byte())
+  nameWithType: ByteArrayExtensions.ToStructure<TTStruct>(Byte[])
+  nameWithType.vb: ByteArrayExtensions.ToStructure(Of TTStruct)(Byte())
+- uid: Platform.Unsafe.IntPtr`1
+  name: IntPtr<T>
+  href: api/Platform.Unsafe.IntPtr-1.html
+  commentId: T:Platform.Unsafe.IntPtr`1
+  name.vb: IntPtr(Of T)
+  fullName: Platform.Unsafe.IntPtr<T>
+  fullName.vb: Platform.Unsafe.IntPtr(Of T)
+  nameWithType: IntPtr<T>
+  nameWithType.vb: IntPtr(Of T)
+- uid: Platform.Unsafe.IntPtr`1.GetValue
+  name: GetValue
+  href: api/Platform.Unsafe.IntPtr-1.html#Platform_Unsafe_IntPtr_1_GetValue
+  commentId: F:Platform.Unsafe.IntPtr`1.GetValue
+  fullName: Platform.Unsafe.IntPtr<T>.GetValue
+  fullName.vb: Platform.Unsafe.IntPtr(Of T).GetValue
+  nameWithType: IntPtr<T>.GetValue
+  nameWithType.vb: IntPtr(Of T).GetValue
+- uid: Platform.Unsafe.IntPtr`1.SetValue
+  name: SetValue
+  href: api/Platform.Unsafe.IntPtr-1.html#Platform_Unsafe_IntPtr_1_SetValue
+  commentId: F:Platform.Unsafe.IntPtr`1.SetValue
+  fullName: Platform.Unsafe.IntPtr<T>.SetValue
+  fullName.vb: Platform.Unsafe.IntPtr(Of T).SetValue
+  nameWithType: IntPtr<T>.SetValue
+  nameWithType.vb: IntPtr(Of T).SetValue
+- uid: Platform.Unsafe.IntPtrExtensions
+  name: IntPtrExtensions
+  href: api/Platform.Unsafe.IntPtrExtensions.html
+  commentId: T:Platform.Unsafe.IntPtrExtensions
+  fullName: Platform.Unsafe.IntPtrExtensions
+  nameWithType: IntPtrExtensions
+- uid: Platform.Unsafe.IntPtrExtensions.GetElement(System.IntPtr,System.Int32,System.Int32)
+  name: GetElement(IntPtr, Int32, Int32)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_GetElement_System_IntPtr_System_Int32_System_Int32_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.GetElement(System.IntPtr,System.Int32,System.Int32)
+  fullName: Platform.Unsafe.IntPtrExtensions.GetElement(System.IntPtr, System.Int32, System.Int32)
+  nameWithType: IntPtrExtensions.GetElement(IntPtr, Int32, Int32)
+- uid: Platform.Unsafe.IntPtrExtensions.GetElement(System.IntPtr,System.Int64,System.Int64)
+  name: GetElement(IntPtr, Int64, Int64)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_GetElement_System_IntPtr_System_Int64_System_Int64_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.GetElement(System.IntPtr,System.Int64,System.Int64)
+  fullName: Platform.Unsafe.IntPtrExtensions.GetElement(System.IntPtr, System.Int64, System.Int64)
+  nameWithType: IntPtrExtensions.GetElement(IntPtr, Int64, Int64)
+- uid: Platform.Unsafe.IntPtrExtensions.GetElement*
+  name: GetElement
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_GetElement_
+  commentId: Overload:Platform.Unsafe.IntPtrExtensions.GetElement
+  isSpec: "True"
+  fullName: Platform.Unsafe.IntPtrExtensions.GetElement
+  nameWithType: IntPtrExtensions.GetElement
+- uid: Platform.Unsafe.IntPtrExtensions.GetElement``1(System.IntPtr,System.Int32,``0)
+  name: GetElement<TIndex>(IntPtr, Int32, TIndex)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_GetElement__1_System_IntPtr_System_Int32___0_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.GetElement``1(System.IntPtr,System.Int32,``0)
+  name.vb: GetElement(Of TIndex)(IntPtr, Int32, TIndex)
+  fullName: Platform.Unsafe.IntPtrExtensions.GetElement<TIndex>(System.IntPtr, System.Int32, TIndex)
+  fullName.vb: Platform.Unsafe.IntPtrExtensions.GetElement(Of TIndex)(System.IntPtr, System.Int32, TIndex)
+  nameWithType: IntPtrExtensions.GetElement<TIndex>(IntPtr, Int32, TIndex)
+  nameWithType.vb: IntPtrExtensions.GetElement(Of TIndex)(IntPtr, Int32, TIndex)
+- uid: Platform.Unsafe.IntPtrExtensions.GetValue*
+  name: GetValue
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_GetValue_
+  commentId: Overload:Platform.Unsafe.IntPtrExtensions.GetValue
+  isSpec: "True"
+  fullName: Platform.Unsafe.IntPtrExtensions.GetValue
+  nameWithType: IntPtrExtensions.GetValue
+- uid: Platform.Unsafe.IntPtrExtensions.GetValue``1(System.IntPtr)
+  name: GetValue<TElement>(IntPtr)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_GetValue__1_System_IntPtr_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.GetValue``1(System.IntPtr)
+  name.vb: GetValue(Of TElement)(IntPtr)
+  fullName: Platform.Unsafe.IntPtrExtensions.GetValue<TElement>(System.IntPtr)
+  fullName.vb: Platform.Unsafe.IntPtrExtensions.GetValue(Of TElement)(System.IntPtr)
+  nameWithType: IntPtrExtensions.GetValue<TElement>(IntPtr)
+  nameWithType.vb: IntPtrExtensions.GetValue(Of TElement)(IntPtr)
+- uid: Platform.Unsafe.IntPtrExtensions.SetValue*
+  name: SetValue
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_SetValue_
+  commentId: Overload:Platform.Unsafe.IntPtrExtensions.SetValue
+  isSpec: "True"
+  fullName: Platform.Unsafe.IntPtrExtensions.SetValue
+  nameWithType: IntPtrExtensions.SetValue
+- uid: Platform.Unsafe.IntPtrExtensions.SetValue``1(System.IntPtr,``0)
+  name: SetValue<TElement>(IntPtr, TElement)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_SetValue__1_System_IntPtr___0_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.SetValue``1(System.IntPtr,``0)
+  name.vb: SetValue(Of TElement)(IntPtr, TElement)
+  fullName: Platform.Unsafe.IntPtrExtensions.SetValue<TElement>(System.IntPtr, TElement)
+  fullName.vb: Platform.Unsafe.IntPtrExtensions.SetValue(Of TElement)(System.IntPtr, TElement)
+  nameWithType: IntPtrExtensions.SetValue<TElement>(IntPtr, TElement)
+  nameWithType.vb: IntPtrExtensions.SetValue(Of TElement)(IntPtr, TElement)
+- uid: Platform.Unsafe.MemoryBlock
+  name: MemoryBlock
+  href: api/Platform.Unsafe.MemoryBlock.html
+  commentId: T:Platform.Unsafe.MemoryBlock
+  fullName: Platform.Unsafe.MemoryBlock
+  nameWithType: MemoryBlock
+- uid: Platform.Unsafe.MemoryBlock.Zero(System.Void*,System.Int64)
+  name: Zero(Void*, Int64)
+  href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_Zero_System_Void__System_Int64_
+  commentId: M:Platform.Unsafe.MemoryBlock.Zero(System.Void*,System.Int64)
+  fullName: Platform.Unsafe.MemoryBlock.Zero(System.Void*, System.Int64)
+  nameWithType: MemoryBlock.Zero(Void*, Int64)
+- uid: Platform.Unsafe.MemoryBlock.Zero*
+  name: Zero
+  href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_Zero_
+  commentId: Overload:Platform.Unsafe.MemoryBlock.Zero
+  isSpec: "True"
+  fullName: Platform.Unsafe.MemoryBlock.Zero
+  nameWithType: MemoryBlock.Zero
+- uid: Platform.Unsafe.Structure`1
+  name: Structure<TStruct>
+  href: api/Platform.Unsafe.Structure-1.html
+  commentId: T:Platform.Unsafe.Structure`1
+  name.vb: Structure(Of TStruct)
+  fullName: Platform.Unsafe.Structure<TStruct>
+  fullName.vb: Platform.Unsafe.Structure(Of TStruct)
+  nameWithType: Structure<TStruct>
+  nameWithType.vb: Structure(Of TStruct)
+- uid: Platform.Unsafe.Structure`1.Size
+  name: Size
+  href: api/Platform.Unsafe.Structure-1.html#Platform_Unsafe_Structure_1_Size
+  commentId: P:Platform.Unsafe.Structure`1.Size
+  fullName: Platform.Unsafe.Structure<TStruct>.Size
+  fullName.vb: Platform.Unsafe.Structure(Of TStruct).Size
+  nameWithType: Structure<TStruct>.Size
+  nameWithType.vb: Structure(Of TStruct).Size
+- uid: Platform.Unsafe.Structure`1.Size*
+  name: Size
+  href: api/Platform.Unsafe.Structure-1.html#Platform_Unsafe_Structure_1_Size_
+  commentId: Overload:Platform.Unsafe.Structure`1.Size
+  isSpec: "True"
+  fullName: Platform.Unsafe.Structure<TStruct>.Size
+  fullName.vb: Platform.Unsafe.Structure(Of TStruct).Size
+  nameWithType: Structure<TStruct>.Size
+  nameWithType.vb: Structure(Of TStruct).Size
+- uid: Platform.Unsafe.StructureExtensions
+  name: StructureExtensions
+  href: api/Platform.Unsafe.StructureExtensions.html
+  commentId: T:Platform.Unsafe.StructureExtensions
+  fullName: Platform.Unsafe.StructureExtensions
+  nameWithType: StructureExtensions
+- uid: Platform.Unsafe.StructureExtensions.ToBytes*
+  name: ToBytes
+  href: api/Platform.Unsafe.StructureExtensions.html#Platform_Unsafe_StructureExtensions_ToBytes_
+  commentId: Overload:Platform.Unsafe.StructureExtensions.ToBytes
+  isSpec: "True"
+  fullName: Platform.Unsafe.StructureExtensions.ToBytes
+  nameWithType: StructureExtensions.ToBytes
+- uid: Platform.Unsafe.StructureExtensions.ToBytes``1(``0)
+  name: ToBytes<TStruct>(TStruct)
+  href: api/Platform.Unsafe.StructureExtensions.html#Platform_Unsafe_StructureExtensions_ToBytes__1___0_
+  commentId: M:Platform.Unsafe.StructureExtensions.ToBytes``1(``0)
+  name.vb: ToBytes(Of TStruct)(TStruct)
+  fullName: Platform.Unsafe.StructureExtensions.ToBytes<TStruct>(TStruct)
+  fullName.vb: Platform.Unsafe.StructureExtensions.ToBytes(Of TStruct)(TStruct)
+  nameWithType: StructureExtensions.ToBytes<TStruct>(TStruct)
+  nameWithType.vb: StructureExtensions.ToBytes(Of TStruct)(TStruct)
