@@ -27,7 +27,7 @@ namespace Platform.Unsafe
         /// <see cref="Marshal.SizeOf(object)"/>
         /// and
         /// <a href="https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L219-L222">code of</a>
-        /// <see cref="Marshal.SizeOf(System.Type)"/>
+        /// <see cref="Marshal.SizeOf(System.Type)"/>.
         /// </para>
         /// <para>
         /// Note that this behaviour can be changed in future versions of .NET.
@@ -41,7 +41,7 @@ namespace Platform.Unsafe
         /// <see cref="Marshal.SizeOf(object)"/>
         /// и
         /// <a href="https://github.com/Microsoft/referencesource/blob/f82e13c3820cd04553c21bf6da01262b95d9bd43/mscorlib/system/runtime/interopservices/marshal.cs#L219-L222">код</a>
-        /// <see cref="Marshal.SizeOf(System.Type)"/>
+        /// <see cref="Marshal.SizeOf(System.Type)"/>.
         /// </para>
         /// <para>
         /// Обратите внимание, что это поведение может быть изменено в будущих версиях .NET.
