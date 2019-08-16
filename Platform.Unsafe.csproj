@@ -37,7 +37,7 @@ This release is not backward compatible with 0.0.2 release.</PackageReleaseNotes
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Numbers" Version="0.1.0" />
+    <PackageReference Include="Platform.Numbers" Version="0.1.1" />
   </ItemGroup>
 
 </Project>
