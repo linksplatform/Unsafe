@@ -3,10 +3,10 @@ using Xunit;
 
 namespace Platform.Unsafe.Tests
 {
-    public class IntPtrExtensionsTests
+    public static class IntPtrExtensionsTests
     {
         [Fact]
-        public void ReadAndWriteOperationsForPointerValuesTest()
+        public static void ReadAndWriteOperationsForPointerValuesTest()
         {
             var pointer = Marshal.AllocHGlobal(sizeof(ulong));
             pointer.SetValue(42UL);
