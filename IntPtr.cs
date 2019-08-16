@@ -23,7 +23,7 @@ namespace Platform.Unsafe
         {
             return DelegateHelpers.Compile<Func<IntPtr, T>>(emiter =>
             {
-                if (CachedTypeInfo<T>.IsNumeric)
+                if (Type<T>.IsNumeric)
                 {
                     emiter.LoadArgument(0);
                     emiter.LoadIndirect<T>();
@@ -42,7 +42,7 @@ namespace Platform.Unsafe
         {
             return DelegateHelpers.Compile<Action<IntPtr, T>>(emiter =>
             {
-                if (CachedTypeInfo<T>.IsNumeric)
+                if (Type<T>.IsNumeric)
                 {
                     emiter.LoadArguments(0, 1);
                     emiter.StoreIndirect<T>();
