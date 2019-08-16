@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.ByteArrayExtensions.html",
-          "hash": "lLEmuZF0hfaOGCn+84luhA=="
+          "hash": "nblG2/IARMXpvU3S2ARaxA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.IntPtr-1.html",
-          "hash": "jP2EKDoLy6VB8Deu97/g8A=="
+          "hash": "2eE1X5i1qXJOdAxrL01m4A=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.IntPtrExtensions.html",
-          "hash": "JD7VVqlOUB1peN3wrIgfsw=="
+          "hash": "uK9xU2qnOHgsBa0xn1ECdA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.MemoryBlock.html",
-          "hash": "f3dV/iLWS7F1j0OLeFCLjQ=="
+          "hash": "RVYqxnfk6Qd+0Qdv7MELhg=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Structure-1.html",
-          "hash": "1hWa5vVDhMTxsUTroOhPhQ=="
+          "hash": "Dhl7JTPO3EvDXy68BHmT6A=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.StructureExtensions.html",
-          "hash": "21rARvwYcAQ9ePjfEqdqFg=="
+          "hash": "fqgemZbQqd3U6R4FZ92FHQ=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Tests.IntPtrExtensionsTests.html",
-          "hash": "rTsCll3IPTdVEWtpvXT6lA=="
+          "hash": "Jfu4VaKUoOE5T6W2dp2N/A=="
         }
       },
       "is_incremental": false,
@@ -171,6 +171,13 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
@@ -181,13 +188,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 9,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
