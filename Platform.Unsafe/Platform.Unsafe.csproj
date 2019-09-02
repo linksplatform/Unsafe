@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Unsafe Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
-    <VersionPrefix>0.1.1</VersionPrefix>
+    <VersionPrefix>0.1.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net461</TargetFrameworks>
     <TargetFramework Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFramework>
@@ -23,9 +23,13 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>Platform.Numbers dependency updated from 0.1.0 to 0.1.1.
-Tests added.
-Build fix.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
+Added System.Runtime.CompilerServices.Unsafe dependency.
+Platform.Numbers dependency from 0.1.1 to 0.2.0.
+IntPtr, IntPtrExtensions classes are obsolete now.
+Added new tests.
+Refactoring, performance optimizations, issues fix.
+</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
