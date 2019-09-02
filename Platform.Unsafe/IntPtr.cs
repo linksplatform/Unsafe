@@ -2,7 +2,6 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 using Platform.Reflection;
-using Platform.Reflection.Sigil;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -23,7 +22,7 @@ namespace Platform.Unsafe
         {
             return DelegateHelpers.Compile<Func<IntPtr, T>>(emiter =>
             {
-                if (Type<T>.IsNumeric)
+                if (NumericType<T>.IsNumeric)
                 {
                     emiter.LoadArgument(0);
                     emiter.LoadIndirect<T>();
@@ -42,7 +41,7 @@ namespace Platform.Unsafe
         {
             return DelegateHelpers.Compile<Action<IntPtr, T>>(emiter =>
             {
-                if (Type<T>.IsNumeric)
+                if (NumericType<T>.IsNumeric)
                 {
                     emiter.LoadArguments(0, 1);
                     emiter.StoreIndirect<T>();

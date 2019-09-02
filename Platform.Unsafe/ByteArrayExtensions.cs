@@ -13,7 +13,7 @@ namespace Platform.Unsafe
         {
             Ensure.Always.ArgumentNotEmpty(bytes, nameof(bytes));
             var structureSize = Structure<TTStruct>.Size;
-            Ensure.Always.ArgumentMeetsCriteria(array => array.Length == structureSize, bytes, nameof(bytes), "Bytes array should be the same length as struct size.");
+            Ensure.Always.ArgumentMeetsCriteria(bytes, array => array.Length == structureSize, nameof(bytes), "Bytes array should be the same length as struct size.");
             var pointer = Marshal.AllocHGlobal(structureSize);
             Marshal.Copy(bytes, 0, pointer, structureSize);
             var structure = Marshal.PtrToStructure<TTStruct>(pointer);
