@@ -86,7 +86,6 @@ namespace Platform.Unsafe.Tests
             var t1 = Performance.Measure(ReadAndWriteOperationsForPointerValuesDelegatesTest);
             var t2 = Performance.Measure(ReadAndWriteOperationsForPointerValuesExtensionMethodsTest);
             var t3 = Performance.Measure(ReadAndWriteOperationsForPointerValuesUnsafeClassMethodsTest);
-
             var message = $"{t1} {t2} {t3}";
             _output.WriteLine(message);
         }
@@ -136,7 +135,6 @@ namespace Platform.Unsafe.Tests
         {
             var t1 = Performance.Measure(ElementOffsetOperationsForPointerValuesExtensionMethods);
             var t2 = Performance.Measure(ElementOffsetOperationsForPointerValuesUnsafeClassMethodsTest);
-
             var message = $"{t1} {t2}";
             _output.WriteLine(message);
         }
