@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Platform.Unsafe.Tests
 {
-    public class SizeOfTests
+    public static class SizeOfTests
     {
         public struct X<T>
         {
@@ -12,21 +12,21 @@ namespace Platform.Unsafe.Tests
         }
 
         [Fact]
-        public void UnsafeClassSizeOfTest()
+        public static void UnsafeClassSizeOfTest()
         {
             var size = System.Runtime.CompilerServices.Unsafe.SizeOf<X<int>>();
             Assert.Equal(8, size);
         }
 
         [Fact]
-        public void MarshalSizeOfTest()
+        public static void MarshalSizeOfTest()
         {
             var size = Marshal.SizeOf(default(X<int>));
             Assert.Equal(8, size);
         }
 
         [Fact]
-        public void StructurePropertyTest()
+        public static void StructurePropertyTest()
         {
             var size = Structure<X<int>>.Size;
             Assert.Equal(8, size);

@@ -2,10 +2,10 @@
 
 namespace Platform.Unsafe.Tests
 {
-    public class StructAndBytesConversionTests
+    public static class StructAndBytesConversionTests
     {
         [Fact]
-        public void StructToBytesTest()
+        public static void StructToBytesTest()
         {
             ulong source = ulong.MaxValue;
             var result = source.ToBytes();
@@ -16,7 +16,7 @@ namespace Platform.Unsafe.Tests
         }
 
         [Fact]
-        public void BytesToStructTest()
+        public static void BytesToStructTest()
         {
             byte[] bytes = new[] { byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue };
             ulong result = bytes.ToStructure<ulong>();

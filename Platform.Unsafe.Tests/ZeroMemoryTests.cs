@@ -2,10 +2,10 @@
 
 namespace Platform.Unsafe.Tests
 {
-    public unsafe class ZeroMemoryTests
+    public static unsafe class ZeroMemoryTests
     {
         [Fact]
-        public void ZeroMemoryTest()
+        public static void ZeroMemoryTest()
         {
             var bytes = new byte[1024];
             for (int i = 0; i < bytes.Length; i++)

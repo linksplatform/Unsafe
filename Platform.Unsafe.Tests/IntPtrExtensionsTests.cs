@@ -30,7 +30,7 @@ namespace Platform.Unsafe.Tests
             Marshal.FreeHGlobal(pointer);
         }
 
-        private ulong Delegates(IntPtr pointer)
+        private static ulong Delegates(IntPtr pointer)
         {
             ulong result;
             IntPtr<ulong>.SetValue(pointer, 42UL);
@@ -51,7 +51,7 @@ namespace Platform.Unsafe.Tests
             Marshal.FreeHGlobal(pointer);
         }
 
-        private ulong ExtensionMethods(IntPtr pointer)
+        private static ulong ExtensionMethods(IntPtr pointer)
         {
             ulong result;
             pointer.SetValue(42UL);
@@ -72,7 +72,7 @@ namespace Platform.Unsafe.Tests
             Marshal.FreeHGlobal((IntPtr)pointer);
         }
 
-        private ulong ReadAndWriteMethods(void* pointer)
+        private static ulong ReadAndWriteMethods(void* pointer)
         {
             ulong result;
             System.Runtime.CompilerServices.Unsafe.Write(pointer, 42UL);
@@ -103,7 +103,7 @@ namespace Platform.Unsafe.Tests
             Marshal.FreeHGlobal(pointer);
         }
 
-        private ulong GetElementExtensionMethods(IntPtr pointer)
+        private static ulong GetElementExtensionMethods(IntPtr pointer)
         {
             ulong result;
             result = (ulong)pointer.GetElement(8, 5);
@@ -123,7 +123,7 @@ namespace Platform.Unsafe.Tests
             Marshal.FreeHGlobal((IntPtr)pointer);
         }
 
-        private ulong GetElementMethods(void* pointer)
+        private static ulong GetElementMethods(void* pointer)
         {
             ulong result;
             result = (ulong)System.Runtime.CompilerServices.Unsafe.Add<ulong>(pointer, 5);
