@@ -5,21 +5,7 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe", "Platform.Unsafe\Platform.Unsafe.csproj", "{3BAA36A7-3D55-4C05-8276-10BC69E13659}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F0A3C773-77D5-4C9E-A694-A3438689BCE9}"
-	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-		.travis.yml = .travis.yml
-		docfx.json = docfx.json
-		format-csharp-files.py = format-csharp-files.py
-		format-document.sh = format-document.sh
-		generate-pdf.sh = generate-pdf.sh
-		publish-docs.sh = publish-docs.sh
-		push-nuget.bat = push-nuget.bat
-		README.md = README.md
-		toc.yml = toc.yml
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Unsafe.Tests", "Platform.Unsafe.Tests\Platform.Unsafe.Tests.csproj", "{98A61E7F-FB9F-4D09-A059-2F94CB1487C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe.Tests", "Platform.Unsafe.Tests\Platform.Unsafe.Tests.csproj", "{98A61E7F-FB9F-4D09-A059-2F94CB1487C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
