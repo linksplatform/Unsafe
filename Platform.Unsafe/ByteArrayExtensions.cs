@@ -1,23 +1,25 @@
-﻿using System.Runtime.InteropServices;
-using Platform.Exceptions;
+﻿using Platform.Exceptions;
 using Platform.Collections;
+using System.Runtime.CompilerServices;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
 namespace Platform.Unsafe
 {
-    public static class ByteArrayExtensions
+    public unsafe static class ByteArrayExtensions
     {
-        public static TTStruct ToStructure<TTStruct>(this byte[] bytes)
-            where TTStruct : struct
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static TStruct ToStructure<TStruct>(this byte[] bytes)
+            where TStruct : struct
         {
-            Ensure.Always.ArgumentNotEmpty(bytes, nameof(bytes));
-            var structureSize = Structure<TTStruct>.Size;
-            Ensure.Always.ArgumentMeetsCriteria(bytes, array => array.Length == structureSize, nameof(bytes), "Bytes array should be the same length as struct size.");
-            var pointer = Marshal.AllocHGlobal(structureSize);
-            Marshal.Copy(bytes, 0, pointer, structureSize);
-            var structure = Marshal.PtrToStructure<TTStruct>(pointer);
-            Marshal.FreeHGlobal(pointer);
+            Ensure.OnDebug.ArgumentNotEmpty(bytes, nameof(bytes));
+            var structureSize = System.Runtime.CompilerServices.Unsafe.SizeOf<TStruct>();
+            Ensure.OnDebug.ArgumentMeetsCriteria(bytes, array => array.Length == structureSize, nameof(bytes), "Bytes array should be the same length as struct size.");
+            TStruct structure = default;
+            fixed (byte* pointer = bytes)
+            {
+                System.Runtime.CompilerServices.Unsafe.Copy(ref structure, pointer);
+            }
             return structure;
         }
     }

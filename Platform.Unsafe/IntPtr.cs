@@ -7,6 +7,9 @@ using Platform.Reflection;
 
 namespace Platform.Unsafe
 {
+    /// <remarks>
+    /// Please use System.Runtime.CompilerServices.Unsafe instead.
+    /// </remarks>
     public static class IntPtr<T>
     {
         public static readonly Func<IntPtr, T> GetValue;

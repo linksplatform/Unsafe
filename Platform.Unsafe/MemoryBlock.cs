@@ -9,18 +9,13 @@ namespace Platform.Unsafe
     {
         public static void Zero(void* pointer, long capacity)
         {
-            var ulongs = capacity / sizeof(ulong);
-            Parallel.ForEach(Partitioner.Create(0, ulongs), range =>
+            Parallel.ForEach(Partitioner.Create(0, capacity), range =>
             {
-                for (long i = range.Item1; i < range.Item2; i++)
-                {
-                    *((ulong*)pointer + i) = 0;
-                }
+                var from = range.Item1;
+                var offset = (void*)((byte*)pointer + from);
+                var length = (uint)(range.Item2 - from);
+                System.Runtime.CompilerServices.Unsafe.InitBlock(offset, 0, length);
             });
-            for (var i = ulongs * sizeof(ulong); i < capacity; i++)
-            {
-                *((byte*)pointer + i) = 0;
-            }
         }
     }
 }
