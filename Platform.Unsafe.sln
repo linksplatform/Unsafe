@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe", "Platform.Unsafe\Platform.Unsafe.csproj", "{3BAA36A7-3D55-4C05-8276-10BC69E13659}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Unsafe", "Platform.Unsafe\Platform.Unsafe.csproj", "{3BAA36A7-3D55-4C05-8276-10BC69E13659}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe.Tests", "Platform.Unsafe.Tests\Platform.Unsafe.Tests.csproj", "{98A61E7F-FB9F-4D09-A059-2F94CB1487C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Unsafe.Tests", "Platform.Unsafe.Tests\Platform.Unsafe.Tests.csproj", "{98A61E7F-FB9F-4D09-A059-2F94CB1487C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
