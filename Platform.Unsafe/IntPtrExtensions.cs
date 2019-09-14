@@ -33,5 +33,8 @@ namespace Platform.Unsafe
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void WriteElementValue<TValue>(this IntPtr pointer, long index, TValue value) => System.Runtime.CompilerServices.Unsafe.Write((byte*)pointer + (System.Runtime.CompilerServices.Unsafe.SizeOf<TValue>() * index), value);
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static TValue ReadElementValue<TValue>(this IntPtr pointer, long index) => System.Runtime.CompilerServices.Unsafe.Read<TValue>((byte*)pointer + (System.Runtime.CompilerServices.Unsafe.SizeOf<TValue>() * index));
     }
 }
