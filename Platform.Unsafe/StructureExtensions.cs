@@ -32,7 +32,7 @@ namespace Platform.Unsafe
         public static void CopyTo<TStruct>(this ref TStruct source, void* destination, int size)
             where TStruct : struct
         {
-            if (CacheLine.Size <= size)
+            if (CacheLine.Size >= size)
             {
                 System.Runtime.CompilerServices.Unsafe.Copy(destination, ref source);
             }
