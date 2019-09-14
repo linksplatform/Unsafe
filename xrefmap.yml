@@ -171,6 +171,31 @@ references:
   commentId: T:Platform.Unsafe.StructureExtensions
   fullName: Platform.Unsafe.StructureExtensions
   nameWithType: StructureExtensions
+- uid: Platform.Unsafe.StructureExtensions.CopyTo*
+  name: CopyTo
+  href: api/Platform.Unsafe.StructureExtensions.html#Platform_Unsafe_StructureExtensions_CopyTo_
+  commentId: Overload:Platform.Unsafe.StructureExtensions.CopyTo
+  isSpec: "True"
+  fullName: Platform.Unsafe.StructureExtensions.CopyTo
+  nameWithType: StructureExtensions.CopyTo
+- uid: Platform.Unsafe.StructureExtensions.CopyTo``1(``0@,System.Void*)
+  name: CopyTo<TStruct>(ref TStruct, Void*)
+  href: api/Platform.Unsafe.StructureExtensions.html#Platform_Unsafe_StructureExtensions_CopyTo__1___0__System_Void__
+  commentId: M:Platform.Unsafe.StructureExtensions.CopyTo``1(``0@,System.Void*)
+  name.vb: CopyTo(Of TStruct)(ByRef TStruct, Void*)
+  fullName: Platform.Unsafe.StructureExtensions.CopyTo<TStruct>(ref TStruct, System.Void*)
+  fullName.vb: Platform.Unsafe.StructureExtensions.CopyTo(Of TStruct)(ByRef TStruct, System.Void*)
+  nameWithType: StructureExtensions.CopyTo<TStruct>(ref TStruct, Void*)
+  nameWithType.vb: StructureExtensions.CopyTo(Of TStruct)(ByRef TStruct, Void*)
+- uid: Platform.Unsafe.StructureExtensions.CopyTo``1(``0@,System.Void*,System.Int32)
+  name: CopyTo<TStruct>(ref TStruct, Void*, Int32)
+  href: api/Platform.Unsafe.StructureExtensions.html#Platform_Unsafe_StructureExtensions_CopyTo__1___0__System_Void__System_Int32_
+  commentId: M:Platform.Unsafe.StructureExtensions.CopyTo``1(``0@,System.Void*,System.Int32)
+  name.vb: CopyTo(Of TStruct)(ByRef TStruct, Void*, Int32)
+  fullName: Platform.Unsafe.StructureExtensions.CopyTo<TStruct>(ref TStruct, System.Void*, System.Int32)
+  fullName.vb: Platform.Unsafe.StructureExtensions.CopyTo(Of TStruct)(ByRef TStruct, System.Void*, System.Int32)
+  nameWithType: StructureExtensions.CopyTo<TStruct>(ref TStruct, Void*, Int32)
+  nameWithType.vb: StructureExtensions.CopyTo(Of TStruct)(ByRef TStruct, Void*, Int32)
 - uid: Platform.Unsafe.StructureExtensions.ToBytes*
   name: ToBytes
   href: api/Platform.Unsafe.StructureExtensions.html#Platform_Unsafe_StructureExtensions_ToBytes_
