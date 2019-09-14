@@ -120,6 +120,22 @@ references:
   fullName.vb: Platform.Unsafe.IntPtrExtensions.SetValue(Of TElement)(System.IntPtr, TElement)
   nameWithType: IntPtrExtensions.SetValue<TElement>(IntPtr, TElement)
   nameWithType.vb: IntPtrExtensions.SetValue(Of TElement)(IntPtr, TElement)
+- uid: Platform.Unsafe.IntPtrExtensions.WriteElementValue*
+  name: WriteElementValue
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_WriteElementValue_
+  commentId: Overload:Platform.Unsafe.IntPtrExtensions.WriteElementValue
+  isSpec: "True"
+  fullName: Platform.Unsafe.IntPtrExtensions.WriteElementValue
+  nameWithType: IntPtrExtensions.WriteElementValue
+- uid: Platform.Unsafe.IntPtrExtensions.WriteElementValue``1(System.IntPtr,System.Int64,``0)
+  name: WriteElementValue<TValue>(IntPtr, Int64, TValue)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_WriteElementValue__1_System_IntPtr_System_Int64___0_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.WriteElementValue``1(System.IntPtr,System.Int64,``0)
+  name.vb: WriteElementValue(Of TValue)(IntPtr, Int64, TValue)
+  fullName: Platform.Unsafe.IntPtrExtensions.WriteElementValue<TValue>(System.IntPtr, System.Int64, TValue)
+  fullName.vb: Platform.Unsafe.IntPtrExtensions.WriteElementValue(Of TValue)(System.IntPtr, System.Int64, TValue)
+  nameWithType: IntPtrExtensions.WriteElementValue<TValue>(IntPtr, Int64, TValue)
+  nameWithType.vb: IntPtrExtensions.WriteElementValue(Of TValue)(IntPtr, Int64, TValue)
 - uid: Platform.Unsafe.MemoryBlock
   name: MemoryBlock
   href: api/Platform.Unsafe.MemoryBlock.html
