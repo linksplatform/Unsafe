@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.ByteArrayExtensions.html",
-          "hash": "hy79dguPhlHdBRpOuczcEg=="
+          "hash": "xLZGwXNDhXT/eSK0+RBStg=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.IntPtr-1.html",
-          "hash": "4nFT8d1iBN1H8BCYkazwjw=="
+          "hash": "v4aFw1H9i75Ez0Ne0hNyMA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.IntPtrExtensions.html",
-          "hash": "YoePN+FbRZB6ovrhMTSbrw=="
+          "hash": "bkYetxqG7GRka30ulWFzbw=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.MemoryBlock.html",
-          "hash": "rKCx2ObHDaPIH67MReUM3w=="
+          "hash": "GkTX2FL5nM25k7IqQsgzgQ=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Structure-1.html",
-          "hash": "5YnEisc+Wckukv8EbGF/xw=="
+          "hash": "65ke9s6tto6alqDSvHQlcQ=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.StructureExtensions.html",
-          "hash": "jj3C+iSW8T120vShNtw0Ow=="
+          "hash": "K1qbAda+rTHHGAOs3Xav3w=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Tests.IntPtrExtensionsTests.html",
-          "hash": "4ZmPA/LCXkM/g3PmWNdBSg=="
+          "hash": "IUDkuMPgz6Fx5mPET5AtnA=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Tests.SizeOfTests.X-1.html",
-          "hash": "InGbLMBRr2wLh3AEYt4RLw=="
+          "hash": "Xa8u3ZSI9ankymJn/ZO6fw=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Tests.SizeOfTests.html",
-          "hash": "JwEVI/Y5u9ReSannxhpm7A=="
+          "hash": "kFSK29o56IRaxztgnQFjvg=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Tests.StructAndBytesConversionTests.html",
-          "hash": "8+Cg6mmet3+brHTjmum7Vw=="
+          "hash": "9Dz5cAaILudcPoPePM7hKQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Tests.ZeroMemoryTests.html",
-          "hash": "ae7EfBw2JOQ6JykA/wCmlQ=="
+          "hash": "kZN5vcVJcUBvdgM36RaF3Q=="
         }
       },
       "is_incremental": false,
@@ -219,11 +219,10 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 1,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
@@ -232,10 +231,11 @@
           "total_file_count": 13,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 1,
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

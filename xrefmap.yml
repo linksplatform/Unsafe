@@ -104,6 +104,22 @@ references:
   fullName.vb: Platform.Unsafe.IntPtrExtensions.GetValue(Of TElement)(System.IntPtr)
   nameWithType: IntPtrExtensions.GetValue<TElement>(IntPtr)
   nameWithType.vb: IntPtrExtensions.GetValue(Of TElement)(IntPtr)
+- uid: Platform.Unsafe.IntPtrExtensions.ReadElementValue*
+  name: ReadElementValue
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_ReadElementValue_
+  commentId: Overload:Platform.Unsafe.IntPtrExtensions.ReadElementValue
+  isSpec: "True"
+  fullName: Platform.Unsafe.IntPtrExtensions.ReadElementValue
+  nameWithType: IntPtrExtensions.ReadElementValue
+- uid: Platform.Unsafe.IntPtrExtensions.ReadElementValue``1(System.IntPtr,System.Int64)
+  name: ReadElementValue<TValue>(IntPtr, Int64)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_ReadElementValue__1_System_IntPtr_System_Int64_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.ReadElementValue``1(System.IntPtr,System.Int64)
+  name.vb: ReadElementValue(Of TValue)(IntPtr, Int64)
+  fullName: Platform.Unsafe.IntPtrExtensions.ReadElementValue<TValue>(System.IntPtr, System.Int64)
+  fullName.vb: Platform.Unsafe.IntPtrExtensions.ReadElementValue(Of TValue)(System.IntPtr, System.Int64)
+  nameWithType: IntPtrExtensions.ReadElementValue<TValue>(IntPtr, Int64)
+  nameWithType.vb: IntPtrExtensions.ReadElementValue(Of TValue)(IntPtr, Int64)
 - uid: Platform.Unsafe.IntPtrExtensions.SetValue*
   name: SetValue
   href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_SetValue_
