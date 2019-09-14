@@ -199,11 +199,11 @@ references:
   commentId: T:Platform.Unsafe.Tests.IntPtrExtensionsTests
   fullName: Platform.Unsafe.Tests.IntPtrExtensionsTests
   nameWithType: IntPtrExtensionsTests
-- uid: Platform.Unsafe.Tests.IntPtrExtensionsTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
+- uid: Platform.Unsafe.Tests.IntPtrExtensionsTests.#ctor(ITestOutputHelper)
   name: IntPtrExtensionsTests(ITestOutputHelper)
-  href: api/Platform.Unsafe.Tests.IntPtrExtensionsTests.html#Platform_Unsafe_Tests_IntPtrExtensionsTests__ctor_Xunit_Abstractions_ITestOutputHelper_
-  commentId: M:Platform.Unsafe.Tests.IntPtrExtensionsTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
-  fullName: Platform.Unsafe.Tests.IntPtrExtensionsTests.IntPtrExtensionsTests(Xunit.Abstractions.ITestOutputHelper)
+  href: api/Platform.Unsafe.Tests.IntPtrExtensionsTests.html#Platform_Unsafe_Tests_IntPtrExtensionsTests__ctor_ITestOutputHelper_
+  commentId: M:Platform.Unsafe.Tests.IntPtrExtensionsTests.#ctor(ITestOutputHelper)
+  fullName: Platform.Unsafe.Tests.IntPtrExtensionsTests.IntPtrExtensionsTests(ITestOutputHelper)
   nameWithType: IntPtrExtensionsTests.IntPtrExtensionsTests(ITestOutputHelper)
 - uid: Platform.Unsafe.Tests.IntPtrExtensionsTests.#ctor*
   name: IntPtrExtensionsTests
