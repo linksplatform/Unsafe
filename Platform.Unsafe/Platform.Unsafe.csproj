@@ -34,7 +34,7 @@ Refactoring, performance optimizations, issues fix.
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.2" />
-    <PackageReference Include="Platform.Numbers" Version="0.2.0" />
+    <PackageReference Include="Platform.Numbers" Version="0.2.1" />
   </ItemGroup>
 
 </Project>
