@@ -6,8 +6,7 @@
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
     <VersionPrefix>0.1.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net461</TargetFrameworks>
-    <TargetFramework Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFramework>
+    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <AssemblyName>Platform.Unsafe</AssemblyName>
     <PackageId>Platform.Unsafe</PackageId>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -23,6 +22,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <LangVersion>Latest</LangVersion>
     <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
 Added System.Runtime.CompilerServices.Unsafe dependency.
 Platform.Numbers dependency from 0.1.1 to 0.2.0.
@@ -31,6 +31,10 @@ Added new tests.
 Refactoring, performance optimizations, issues fix.
 </PackageReleaseNotes>
   </PropertyGroup>
+  
+  <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0-preview.2" PrivateAssets="All" />      
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.2" />
