@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Unsafe Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
-    <VersionPrefix>0.1.2</VersionPrefix>
+    <VersionPrefix>0.1.3</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net471;netstandard2.0</TargetFrameworks>
     <AssemblyName>Platform.Unsafe</AssemblyName>
@@ -23,13 +23,14 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>Latest</LangVersion>
-    <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
-Added System.Runtime.CompilerServices.Unsafe dependency.
-Platform.Numbers dependency from 0.1.1 to 0.2.0.
-IntPtr, IntPtrExtensions classes are obsolete now.
-Added new tests.
-Refactoring, performance optimizations, issues fix.
-</PackageReleaseNotes>
+    <PackageReleaseNotes>Added Platform.Hardware.Cpu dependency.
+Platform.Numbers dependency updated from 0.2.0 to 0.2.1.
+Project files updated to support multiple build environments: dotnet, Travis CI, MonoDevelop, and Visual Studio.
+Travis CI build configuration updated to support automatic NuGet package publishing.
+Added CopyTo method with 2 overloads to StructureExtensions.
+Added ReadElementValue method to IntPtrExtensions.
+Added WriteElementValue method to IntPtrExtensions.
+Refactoring, performance optimizations, issues fix.</PackageReleaseNotes>
   </PropertyGroup>
   
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
