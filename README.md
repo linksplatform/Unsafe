@@ -1,3 +1,4 @@
+[![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Unsafe)](https://www.nuget.org/packages/Platform.Unsafe)
 [![Build Status](https://travis-ci.com/linksplatform/Unsafe.svg?branch=master)](https://travis-ci.com/linksplatform/Unsafe)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f44d620bd580471fb291b17fab31e58a)](https://app.codacy.com/app/drakonard/Unsafe?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Unsafe&utm_campaign=Badge_Grade_Dashboard)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/unsafe/badge)](https://www.codefactor.io/repository/github/linksplatform/unsafe)
@@ -24,10 +25,10 @@ NuGet package: [Platform.Unsafe](https://www.nuget.org/packages/Platform.Unsafe)
 *   [Platform.IO](https://github.com/linksplatform/IO)
 
 ## Mystery files
-*   [.travis.yml](https://github.com/linksplatform/Unsafe/blob/master/.travis.yml) - Travis CI build configuration.
-*   [docfx.json](https://github.com/linksplatform/Unsafe/blob/master/docfx.json) and [toc.yml](https://github.com/linksplatform/Unsafe/blob/master/toc.yml) - DocFX build configuration.
+*   [.travis.yml](https://github.com/linksplatform/Unsafe/blob/master/.travis.yml) - [Travis CI](https://travis-ci.com) build configuration.
+*   [docfx.json](https://github.com/linksplatform/Unsafe/blob/master/docfx.json) and [toc.yml](https://github.com/linksplatform/Unsafe/blob/master/toc.yml) - [DocFX](https://dotnet.github.io/docfx) build configuration.
 *   [format-document.sh](https://github.com/linksplatform/Unsafe/blob/master/format-document.sh) - script for formatting `tex` file for generating PDF from it.
 *   [format-csharp-files.py](https://github.com/linksplatform/Unsafe/blob/master/format-csharp-files.py) - script for formatting `.cs` files as a part of `tex` file.
 *   [generate-pdf.sh](https://github.com/linksplatform/Unsafe/blob/master/generate-pdf.sh) - script that generates PDF with code for e-readers.
-*   [publish-docs.sh](https://github.com/linksplatform/Unsafe/blob/master/publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to `gh-pages` branch.
-*   [push-nuget.bat](https://github.com/linksplatform/Unsafe/blob/master/push-nuget.bat) - Windows script for publishing current version of NuGet package.
+*   [publish-docs.sh](https://github.com/linksplatform/Unsafe/blob/master/publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to [gh-pages](https://github.com/linksplatform/Unsafe/tree/gh-pages) branch.
+*   [push-nuget.sh](https://github.com/linksplatform/Unsafe/blob/master/push-nuget.sh) - script for publishing current version of [NuGet](https://www.nuget.org) package.
