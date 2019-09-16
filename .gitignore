@@ -329,8 +329,15 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 
-# Linux and MonoDevelop
+# Linux
+# dolphin
 .directory
+
+# konsole
 org.kde.konsole.desktop
+
+# kate
+*~
+*-swp
 *.kate-swp
-*.vE4458
+.swp.*
