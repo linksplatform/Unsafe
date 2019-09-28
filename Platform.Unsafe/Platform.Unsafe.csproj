@@ -38,7 +38,7 @@ Refactoring, performance optimizations, issues fix.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.2" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.6.0" />
     <PackageReference Include="Platform.Numbers" Version="0.2.1" />
     <PackageReference Include="Platform.Hardware.Cpu" Version="0.0.2" />
   </ItemGroup>
