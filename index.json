@@ -1,49 +1,4 @@
 {
-  "README.html": {
-    "href": "README.html",
-    "title": "Unsafe | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Unsafe LinksPlatform's Platform.Unsafe Class Library. Namespace: Platform.Unsafe Forked from: Konard/LinksPlatform/Platform/Platform.Helpers/Unsafe NuGet package: Platform.Unsafe Documentation PDF file with code for e-readers. Depend on System.Runtime.CompilerServices.Unsafe Platform.Numbers Dependent libraries Platform.Collections.Methods Platform.IO Mystery files .travis.yml - Travis CI build configuration. docfx.json and toc.yml - DocFX build configuration. format-document.sh - script for formatting tex file for generating PDF from it. format-csharp-files.py - script for formatting .cs files as a part of tex file. generate-pdf.sh - script that generates PDF with code for e-readers. publish-docs.sh - script that publishes generated documentation and PDF with code for e-readers to gh-pages branch. push-nuget.sh - script for publishing current version of NuGet package."
-  },
-  "api/Platform.Unsafe.html": {
-    "href": "api/Platform.Unsafe.html",
-    "title": "Namespace Platform.Unsafe | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Namespace Platform.Unsafe Classes ByteArrayExtensions IntPtr<T> IntPtrExtensions MemoryBlock Structure<TStruct> StructureExtensions"
-  },
-  "api/Platform.Unsafe.Tests.SizeOfTests.X-1.html": {
-    "href": "api/Platform.Unsafe.Tests.SizeOfTests.X-1.html",
-    "title": "Struct SizeOfTests.X<T> | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Struct SizeOfTests.X<T> Namespace : Platform.Unsafe.Tests Assembly : Platform.Unsafe.Tests.dll Syntax public struct X<T> Type Parameters Name Description T Fields | Improve this Doc View Source F1 Declaration public readonly T F1 Field Value Type Description T | Improve this Doc View Source F2 Declaration public readonly T F2 Field Value Type Description T Extension Methods StructureExtensions.ToBytes<TStruct>(ref TStruct) StructureExtensions.CopyTo<TStruct>(ref TStruct, Void*) StructureExtensions.CopyTo<TStruct>(ref TStruct, Void*, Int32)"
-  },
-  "api/Platform.Unsafe.Tests.StructAndBytesConversionTests.html": {
-    "href": "api/Platform.Unsafe.Tests.StructAndBytesConversionTests.html",
-    "title": "Class StructAndBytesConversionTests | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Class StructAndBytesConversionTests Inheritance Object StructAndBytesConversionTests Namespace : Platform.Unsafe.Tests Assembly : Platform.Unsafe.Tests.dll Syntax public static class StructAndBytesConversionTests : object Methods | Improve this Doc View Source BytesToStructTest() Declaration public static void BytesToStructTest() | Improve this Doc View Source StructToBytesTest() Declaration public static void StructToBytesTest()"
-  },
-  "api/Platform.Unsafe.ByteArrayExtensions.html": {
-    "href": "api/Platform.Unsafe.ByteArrayExtensions.html",
-    "title": "Class ByteArrayExtensions | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Class ByteArrayExtensions Inheritance Object ByteArrayExtensions Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class ByteArrayExtensions Methods | Improve this Doc View Source ToStructure<TStruct>(Byte[]) Declaration public static TStruct ToStructure<TStruct>(this byte[] bytes) where TStruct : struct Parameters Type Name Description Byte [] bytes Returns Type Description TStruct Type Parameters Name Description TStruct"
-  },
-  "api/Platform.Unsafe.Tests.html": {
-    "href": "api/Platform.Unsafe.Tests.html",
-    "title": "Namespace Platform.Unsafe.Tests | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Namespace Platform.Unsafe.Tests Classes IntPtrExtensionsTests SizeOfTests StructAndBytesConversionTests ZeroMemoryTests Structs SizeOfTests.X<T>"
-  },
-  "api/Platform.Unsafe.Tests.IntPtrExtensionsTests.html": {
-    "href": "api/Platform.Unsafe.Tests.IntPtrExtensionsTests.html",
-    "title": "Class IntPtrExtensionsTests | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Class IntPtrExtensionsTests Inheritance Object IntPtrExtensionsTests Namespace : Platform.Unsafe.Tests Assembly : Platform.Unsafe.Tests.dll Syntax public class IntPtrExtensionsTests : object Constructors | Improve this Doc View Source IntPtrExtensionsTests(ITestOutputHelper) Declaration public IntPtrExtensionsTests(ITestOutputHelper output) Parameters Type Name Description ITestOutputHelper output Methods | Improve this Doc View Source ElementOffsetOperationsForPointerValuesExtensionMethods() Declaration public void ElementOffsetOperationsForPointerValuesExtensionMethods() | Improve this Doc View Source ElementOffsetOperationsForPointerValuesUnsafeClassMethodsTest() Declaration public void ElementOffsetOperationsForPointerValuesUnsafeClassMethodsTest() | Improve this Doc View Source GetElementOperationsComparisionTest() Declaration public void GetElementOperationsComparisionTest() | Improve this Doc View Source ReadAndWriteOperationsComparisionTest() Declaration public void ReadAndWriteOperationsComparisionTest() | Improve this Doc View Source ReadAndWriteOperationsForPointerValuesDelegatesTest() Declaration public void ReadAndWriteOperationsForPointerValuesDelegatesTest() | Improve this Doc View Source ReadAndWriteOperationsForPointerValuesExtensionMethodsTest() Declaration public void ReadAndWriteOperationsForPointerValuesExtensionMethodsTest() | Improve this Doc View Source ReadAndWriteOperationsForPointerValuesUnsafeClassMethodsTest() Declaration public void ReadAndWriteOperationsForPointerValuesUnsafeClassMethodsTest()"
-  },
-  "api/Platform.Unsafe.Structure-1.html": {
-    "href": "api/Platform.Unsafe.Structure-1.html",
-    "title": "Class Structure<TStruct> | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Class Structure<TStruct> Inheritance Object Structure<TStruct> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class Structure<TStruct> where TStruct : struct Type Parameters Name Description TStruct Properties | Improve this Doc View Source Size Returns the size of an unmanaged type in bytes. This property do this without throwing exceptions for generic types as SizeOf<T>() and SizeOf(Type) do. Возвращает размер неуправляемого типа в байтах. Этот свойство делает это без выбрасывания исключений для универсальных типов, как это делают SizeOf<T>() и SizeOf(Type) . Declaration public static int Size { get; } Property Value Type Description Int32"
-  },
-  "api/Platform.Unsafe.IntPtr-1.html": {
-    "href": "api/Platform.Unsafe.IntPtr-1.html",
-    "title": "Class IntPtr<T> | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Class IntPtr<T> Inheritance Object IntPtr<T> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class IntPtr<T> Type Parameters Name Description T Remarks Please use System.Runtime.CompilerServices.Unsafe instead. Fields | Improve this Doc View Source GetValue Declaration public static readonly Func<IntPtr, T> GetValue Field Value Type Description Func < IntPtr , T> | Improve this Doc View Source SetValue Declaration public static readonly Action<IntPtr, T> SetValue Field Value Type Description Action < IntPtr , T>"
-  },
   "api/Platform.Unsafe.IntPtrExtensions.html": {
     "href": "api/Platform.Unsafe.IntPtrExtensions.html",
     "title": "Class IntPtrExtensions | LinksPlatform's Platform.Unsafe Library",
@@ -54,19 +9,64 @@
     "title": "Class ZeroMemoryTests | LinksPlatform's Platform.Unsafe Library",
     "keywords": "Class ZeroMemoryTests Inheritance Object ZeroMemoryTests Namespace : Platform.Unsafe.Tests Assembly : Platform.Unsafe.Tests.dll Syntax public static class ZeroMemoryTests : object Methods | Improve this Doc View Source ZeroMemoryTest() Declaration public static void ZeroMemoryTest()"
   },
+  "api/Platform.Unsafe.Tests.html": {
+    "href": "api/Platform.Unsafe.Tests.html",
+    "title": "Namespace Platform.Unsafe.Tests | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Namespace Platform.Unsafe.Tests Classes IntPtrExtensionsTests SizeOfTests StructAndBytesConversionTests ZeroMemoryTests Structs SizeOfTests.X<T>"
+  },
   "api/Platform.Unsafe.Tests.SizeOfTests.html": {
     "href": "api/Platform.Unsafe.Tests.SizeOfTests.html",
     "title": "Class SizeOfTests | LinksPlatform's Platform.Unsafe Library",
     "keywords": "Class SizeOfTests Inheritance Object SizeOfTests Namespace : Platform.Unsafe.Tests Assembly : Platform.Unsafe.Tests.dll Syntax public static class SizeOfTests : object Methods | Improve this Doc View Source MarshalSizeOfTest() Declaration public static void MarshalSizeOfTest() | Improve this Doc View Source StructurePropertyTest() Declaration public static void StructurePropertyTest() | Improve this Doc View Source UnsafeClassSizeOfTest() Declaration public static void UnsafeClassSizeOfTest()"
+  },
+  "api/Platform.Unsafe.Tests.StructAndBytesConversionTests.html": {
+    "href": "api/Platform.Unsafe.Tests.StructAndBytesConversionTests.html",
+    "title": "Class StructAndBytesConversionTests | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class StructAndBytesConversionTests Inheritance Object StructAndBytesConversionTests Namespace : Platform.Unsafe.Tests Assembly : Platform.Unsafe.Tests.dll Syntax public static class StructAndBytesConversionTests : object Methods | Improve this Doc View Source BytesToStructTest() Declaration public static void BytesToStructTest() | Improve this Doc View Source StructToBytesTest() Declaration public static void StructToBytesTest()"
+  },
+  "api/Platform.Unsafe.Tests.SizeOfTests.X-1.html": {
+    "href": "api/Platform.Unsafe.Tests.SizeOfTests.X-1.html",
+    "title": "Struct SizeOfTests.X<T> | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Struct SizeOfTests.X<T> Namespace : Platform.Unsafe.Tests Assembly : Platform.Unsafe.Tests.dll Syntax public struct X<T> Type Parameters Name Description T Fields | Improve this Doc View Source F1 Declaration public readonly T F1 Field Value Type Description T | Improve this Doc View Source F2 Declaration public readonly T F2 Field Value Type Description T Extension Methods StructureExtensions.ToBytes<TStruct>(ref TStruct) StructureExtensions.CopyTo<TStruct>(ref TStruct, Void*) StructureExtensions.CopyTo<TStruct>(ref TStruct, Void*, Int32)"
   },
   "api/Platform.Unsafe.MemoryBlock.html": {
     "href": "api/Platform.Unsafe.MemoryBlock.html",
     "title": "Class MemoryBlock | LinksPlatform's Platform.Unsafe Library",
     "keywords": "Class MemoryBlock Inheritance Object MemoryBlock Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class MemoryBlock Methods | Improve this Doc View Source Zero(Void*, Int64) Declaration public static void Zero(void *pointer, long capacity) Parameters Type Name Description Void * pointer Int64 capacity"
   },
+  "api/Platform.Unsafe.ByteArrayExtensions.html": {
+    "href": "api/Platform.Unsafe.ByteArrayExtensions.html",
+    "title": "Class ByteArrayExtensions | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class ByteArrayExtensions Inheritance Object ByteArrayExtensions Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class ByteArrayExtensions Methods | Improve this Doc View Source ToStructure<TStruct>(Byte[]) Declaration public static TStruct ToStructure<TStruct>(this byte[] bytes) where TStruct : struct Parameters Type Name Description Byte [] bytes Returns Type Description TStruct Type Parameters Name Description TStruct"
+  },
+  "README.html": {
+    "href": "README.html",
+    "title": "Unsafe | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Unsafe LinksPlatform's Platform.Unsafe Class Library. Namespace: Platform.Unsafe Forked from: Konard/LinksPlatform/Platform/Platform.Helpers/Unsafe NuGet package: Platform.Unsafe Documentation PDF file with code for e-readers. Depend on System.Runtime.CompilerServices.Unsafe Platform.Numbers Dependent libraries Platform.Collections.Methods Platform.IO Mystery files .travis.yml - Travis CI build configuration. docfx.json and toc.yml - DocFX build configuration. format-document.sh - script for formatting tex file for generating PDF from it. format-csharp-files.py - script for formatting .cs files as a part of tex file. generate-pdf.sh - script that generates PDF with code for e-readers. publish-docs.sh - script that publishes generated documentation and PDF with code for e-readers to gh-pages branch. push-nuget.sh - script for publishing current version of NuGet package."
+  },
   "api/Platform.Unsafe.StructureExtensions.html": {
     "href": "api/Platform.Unsafe.StructureExtensions.html",
     "title": "Class StructureExtensions | LinksPlatform's Platform.Unsafe Library",
     "keywords": "Class StructureExtensions Inheritance Object StructureExtensions Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class StructureExtensions Methods | Improve this Doc View Source CopyTo<TStruct>(ref TStruct, Void*) Declaration public static void CopyTo<TStruct>(this ref TStruct source, void *destination) where TStruct : struct Parameters Type Name Description TStruct source Void * destination Type Parameters Name Description TStruct | Improve this Doc View Source CopyTo<TStruct>(ref TStruct, Void*, Int32) Declaration public static void CopyTo<TStruct>(this ref TStruct source, void *destination, int size) where TStruct : struct Parameters Type Name Description TStruct source Void * destination Int32 size Type Parameters Name Description TStruct | Improve this Doc View Source ToBytes<TStruct>(ref TStruct) Declaration public static byte[] ToBytes<TStruct>(this ref TStruct obj) where TStruct : struct Parameters Type Name Description TStruct obj Returns Type Description Byte [] Type Parameters Name Description TStruct"
+  },
+  "api/Platform.Unsafe.IntPtr-1.html": {
+    "href": "api/Platform.Unsafe.IntPtr-1.html",
+    "title": "Class IntPtr<T> | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class IntPtr<T> Inheritance Object IntPtr<T> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class IntPtr<T> Type Parameters Name Description T Remarks Please use System.Runtime.CompilerServices.Unsafe instead. Fields | Improve this Doc View Source GetValue Declaration public static readonly Func<IntPtr, T> GetValue Field Value Type Description Func < IntPtr , T> | Improve this Doc View Source SetValue Declaration public static readonly Action<IntPtr, T> SetValue Field Value Type Description Action < IntPtr , T>"
+  },
+  "api/Platform.Unsafe.html": {
+    "href": "api/Platform.Unsafe.html",
+    "title": "Namespace Platform.Unsafe | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Namespace Platform.Unsafe Classes ByteArrayExtensions IntPtr<T> IntPtrExtensions MemoryBlock Structure<TStruct> StructureExtensions"
+  },
+  "api/Platform.Unsafe.Structure-1.html": {
+    "href": "api/Platform.Unsafe.Structure-1.html",
+    "title": "Class Structure<TStruct> | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class Structure<TStruct> Inheritance Object Structure<TStruct> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class Structure<TStruct> where TStruct : struct Type Parameters Name Description TStruct Properties | Improve this Doc View Source Size Returns the size of an unmanaged type in bytes. This property do this without throwing exceptions for generic types as SizeOf<T>() and SizeOf(Type) do. Возвращает размер неуправляемого типа в байтах. Этот свойство делает это без выбрасывания исключений для универсальных типов, как это делают SizeOf<T>() и SizeOf(Type) . Declaration public static int Size { get; } Property Value Type Description Int32"
+  },
+  "api/Platform.Unsafe.Tests.IntPtrExtensionsTests.html": {
+    "href": "api/Platform.Unsafe.Tests.IntPtrExtensionsTests.html",
+    "title": "Class IntPtrExtensionsTests | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Class IntPtrExtensionsTests Inheritance Object IntPtrExtensionsTests Namespace : Platform.Unsafe.Tests Assembly : Platform.Unsafe.Tests.dll Syntax public class IntPtrExtensionsTests : object Constructors | Improve this Doc View Source IntPtrExtensionsTests(ITestOutputHelper) Declaration public IntPtrExtensionsTests(ITestOutputHelper output) Parameters Type Name Description ITestOutputHelper output Methods | Improve this Doc View Source ElementOffsetOperationsForPointerValuesExtensionMethods() Declaration public void ElementOffsetOperationsForPointerValuesExtensionMethods() | Improve this Doc View Source ElementOffsetOperationsForPointerValuesUnsafeClassMethodsTest() Declaration public void ElementOffsetOperationsForPointerValuesUnsafeClassMethodsTest() | Improve this Doc View Source GetElementOperationsComparisionTest() Declaration public void GetElementOperationsComparisionTest() | Improve this Doc View Source ReadAndWriteOperationsComparisionTest() Declaration public void ReadAndWriteOperationsComparisionTest() | Improve this Doc View Source ReadAndWriteOperationsForPointerValuesDelegatesTest() Declaration public void ReadAndWriteOperationsForPointerValuesDelegatesTest() | Improve this Doc View Source ReadAndWriteOperationsForPointerValuesExtensionMethodsTest() Declaration public void ReadAndWriteOperationsForPointerValuesExtensionMethodsTest() | Improve this Doc View Source ReadAndWriteOperationsForPointerValuesUnsafeClassMethodsTest() Declaration public void ReadAndWriteOperationsForPointerValuesUnsafeClassMethodsTest()"
   }
 }
