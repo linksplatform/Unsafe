@@ -110,7 +110,8 @@ namespace Platform.Unsafe.Tests
         private static ulong GetElementExtensionMethods(IntPtr pointer)
         {
             ulong result;
-            result = (ulong)pointer.GetElement(8, 5);
+            //result = (ulong)pointer.GetElement(8, 5);
+            result = (ulong)System.Runtime.CompilerServices.Unsafe.Add<ulong>((void*)pointer, 5);
             return result;
         }
 
