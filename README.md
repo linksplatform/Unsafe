@@ -1,5 +1,5 @@
 [![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Unsafe)](https://www.nuget.org/packages/Platform.Unsafe)
-[![Build Status](https://travis-ci.com/linksplatform/Unsafe.svg?branch=master)](https://travis-ci.com/linksplatform/Unsafe)
+[![Actions Status](https://github.com/linksplatform/Unsafe/workflows/CD/badge.svg)](https://github.com/linksplatform/Unsafe/actions?workflow=CD)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f44d620bd580471fb291b17fab31e58a)](https://app.codacy.com/app/drakonard/Unsafe?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Unsafe&utm_campaign=Badge_Grade_Dashboard)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/unsafe/badge)](https://www.codefactor.io/repository/github/linksplatform/unsafe)
 
