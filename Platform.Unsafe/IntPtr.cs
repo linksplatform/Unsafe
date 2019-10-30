@@ -13,14 +13,8 @@ namespace Platform.Unsafe
     [Obsolete("Please use System.Runtime.CompilerServices.Unsafe instead.")]
     public static class IntPtr<T>
     {
-        public static readonly Func<IntPtr, T> GetValue;
-        public static readonly Action<IntPtr, T> SetValue;
-
-        static IntPtr()
-        {
-            GetValue = CompileGetValueDelegate();
-            SetValue = CompileSetValueDelegate();
-        }
+        public static readonly Func<IntPtr, T> GetValue = CompileGetValueDelegate();
+        public static readonly Action<IntPtr, T> SetValue = CompileSetValueDelegate();
 
         static private Func<IntPtr, T> CompileGetValueDelegate()
         {
