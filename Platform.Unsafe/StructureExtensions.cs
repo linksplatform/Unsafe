@@ -12,7 +12,7 @@ namespace Platform.Unsafe
         public static byte[] ToBytes<TStruct>(this ref TStruct obj)
             where TStruct : struct
         {
-            var structureSize = SizeOf<TStruct>();
+            var structureSize = Structure<ulong>.Size;
             var bytes = new byte[structureSize];
             fixed (byte* pointer = bytes)
             {
@@ -22,12 +22,7 @@ namespace Platform.Unsafe
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void CopyTo<TStruct>(this ref TStruct source, void* destination)
-            where TStruct : struct
-        {
-            var size = SizeOf<TStruct>();
-            CopyTo(ref source, destination, size);
-        }
+        public static void CopyTo<TStruct>(this ref TStruct source, void* destination) where TStruct : struct => CopyTo(ref source, destination, Structure<ulong>.Size);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void CopyTo<TStruct>(this ref TStruct source, void* destination, int size)
