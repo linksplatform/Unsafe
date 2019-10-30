@@ -1,5 +1,6 @@
 ﻿using System;
 using BenchmarkDotNet.Attributes;
+using static System.Runtime.CompilerServices.Unsafe;
 
 #pragma warning disable CA1822 // Mark members as static
 
@@ -21,7 +22,7 @@ namespace Platform.Unsafe.Benchmarks
         public void ArrayClear() => Array.Clear(_array, 0, _array.Length);
 
         [Benchmark]
-        public void ZeroForLoop()
+        public void ForLoop()
         {
             for (var i = 0; i < _array.Length; i++)
             {
@@ -30,20 +31,20 @@ namespace Platform.Unsafe.Benchmarks
         }
 
         [Benchmark]
-        public void Zero()
+        public void UnsafeInitBlock()
         {
             fixed (byte* pointer = _array)
             {
-                MemoryBlock.Zero(pointer, _array.Length);
+                InitBlock((void*)pointer, 0, (uint)_array.Length);
             }
         }
 
         [Benchmark]
-        public void ParallelZero()
+        public void MemoryBlockZero()
         {
             fixed (byte* pointer = _array)
             {
-                MemoryBlock.ParallelZero(pointer, _array.Length);
+                MemoryBlock.Zero(pointer, _array.Length);
             }
         }
     }
