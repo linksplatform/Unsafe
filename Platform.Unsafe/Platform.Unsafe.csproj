@@ -24,7 +24,7 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <LangVersion>Latest</LangVersion>
+    <LangVersion>latest</LangVersion>
     <PackageReleaseNotes>Added Platform.Hardware.Cpu dependency.
 Platform.Numbers dependency updated from 0.2.0 to 0.2.1.
 Project files updated to support multiple build environments: dotnet, Travis CI, MonoDevelop, and Visual Studio.
