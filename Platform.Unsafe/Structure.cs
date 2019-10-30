@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using static System.Runtime.CompilerServices.Unsafe;
 
@@ -19,6 +20,10 @@ namespace Platform.Unsafe
         /// Этот свойство делает это без выбрасывания исключений для универсальных типов, как это делают <see cref="Marshal.SizeOf{T}()"/> и <see cref="Marshal.SizeOf(Type)"/>.
         /// </para>
         /// </summary>
-        public static int Size { get; } = SizeOf<TStruct>();
+        public static int Size
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        } = SizeOf<TStruct>();
     }
 }

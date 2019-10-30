@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using static System.Runtime.CompilerServices.Unsafe;
 
@@ -8,6 +9,7 @@ namespace Platform.Unsafe
 {
     public static unsafe class MemoryBlock
     {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Zero(void* pointer, long capacity)
         {
             Parallel.ForEach(Partitioner.Create(0, capacity), range =>

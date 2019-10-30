@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Platform.Reflection;
 
@@ -16,6 +17,7 @@ namespace Platform.Unsafe
         public static readonly Func<IntPtr, T> GetValue = CompileGetValueDelegate();
         public static readonly Action<IntPtr, T> SetValue = CompileSetValueDelegate();
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         static private Func<IntPtr, T> CompileGetValueDelegate()
         {
             return DelegateHelpers.Compile<Func<IntPtr, T>>(emiter =>
@@ -35,6 +37,7 @@ namespace Platform.Unsafe
             });
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         static private Action<IntPtr, T> CompileSetValueDelegate()
         {
             return DelegateHelpers.Compile<Action<IntPtr, T>>(emiter =>
