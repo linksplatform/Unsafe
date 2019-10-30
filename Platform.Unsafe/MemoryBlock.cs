@@ -20,6 +20,7 @@ namespace Platform.Unsafe
             }
             else
             {
+                threads = 2;
                 Parallel.ForEach(Partitioner.Create(0L, capacity), new ParallelOptions { MaxDegreeOfParallelism = threads }, range => ZeroBlock(pointer, range.Item1, range.Item2));
             }
         }
