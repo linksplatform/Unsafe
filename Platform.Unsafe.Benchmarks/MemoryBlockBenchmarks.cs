@@ -17,6 +17,15 @@ namespace Platform.Unsafe.Benchmarks
         public static void Setup() => _array = new byte[4096 * 1024];
 
         [Benchmark]
+        public void ZeroForLoop()
+        {
+            for (var i = 0; i < _array.Length; i++)
+            {
+                _array[i] = 0;
+            }
+        }
+
+        [Benchmark]
         public void Zero()
         {
             fixed (byte* pointer = _array)
