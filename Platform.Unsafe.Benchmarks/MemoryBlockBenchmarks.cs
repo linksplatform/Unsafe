@@ -1,4 +1,5 @@
-﻿using BenchmarkDotNet.Attributes;
+﻿using System;
+using BenchmarkDotNet.Attributes;
 
 #pragma warning disable CA1822 // Mark members as static
 
@@ -15,6 +16,9 @@ namespace Platform.Unsafe.Benchmarks
 
         [GlobalSetup]
         public static void Setup() => _array = new byte[4096 * 1024];
+
+        [Benchmark]
+        public void ArrayClear() => Array.Clear(_array, 0, _array.Length);
 
         [Benchmark]
         public void ZeroForLoop()
