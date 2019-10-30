@@ -33,8 +33,10 @@ namespace Platform.Unsafe.Tests
         private static ulong Delegates(IntPtr pointer)
         {
             ulong result;
-            IntPtr<ulong>.SetValue(pointer, 42UL);
-            result = IntPtr<ulong>.GetValue(pointer);
+            //IntPtr<ulong>.SetValue(pointer, 42UL);
+            System.Runtime.CompilerServices.Unsafe.Write((void*)pointer, 42UL);
+            //result = IntPtr<ulong>.GetValue(pointer);
+            result = System.Runtime.CompilerServices.Unsafe.Read<ulong>((void*)pointer);
             return result;
         }
 
@@ -54,8 +56,10 @@ namespace Platform.Unsafe.Tests
         private static ulong ExtensionMethods(IntPtr pointer)
         {
             ulong result;
-            pointer.SetValue(42UL);
-            result = pointer.GetValue<ulong>();
+            //pointer.SetValue(42UL);
+            System.Runtime.CompilerServices.Unsafe.Write((void*)pointer, 42UL);
+            //result = pointer.GetValue<ulong>();
+            result = System.Runtime.CompilerServices.Unsafe.Read<ulong>((void*)pointer);
             return result;
         }
 
