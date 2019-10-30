@@ -6,6 +6,7 @@ namespace Platform.Unsafe.Benchmarks
     {
         static void Main()
         {
+            BenchmarkRunner.Run<CopyBenchmarks>();
             BenchmarkRunner.Run<SizeOfBenchmarks>();
             BenchmarkRunner.Run<MemoryBlockBenchmarks>();
         }

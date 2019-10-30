@@ -9,9 +9,6 @@ namespace Platform.Unsafe.Benchmarks
     [MemoryDiagnoser]
     public class SizeOfBenchmarks
     {
-        [Params(10000, 1000000, 100000000)]
-        public int N { get; set; }
-
         [Benchmark]
         public int StructureSize() => Structure<ulong>.Size;
 

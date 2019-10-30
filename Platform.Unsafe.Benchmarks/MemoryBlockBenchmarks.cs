@@ -10,9 +10,6 @@ namespace Platform.Unsafe.Benchmarks
     [MemoryDiagnoser]
     public unsafe class MemoryBlockBenchmarks
     {
-        [Params(10000, 1000000, 100000000)]
-        public int N { get; set; }
-
         private static byte[] _array;
 
         [GlobalSetup]
