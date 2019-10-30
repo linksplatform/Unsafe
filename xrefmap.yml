@@ -158,19 +158,6 @@ references:
   commentId: T:Platform.Unsafe.MemoryBlock
   fullName: Platform.Unsafe.MemoryBlock
   nameWithType: MemoryBlock
-- uid: Platform.Unsafe.MemoryBlock.ParallelZero(System.Void*,System.Int64)
-  name: ParallelZero(Void*, Int64)
-  href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_ParallelZero_System_Void__System_Int64_
-  commentId: M:Platform.Unsafe.MemoryBlock.ParallelZero(System.Void*,System.Int64)
-  fullName: Platform.Unsafe.MemoryBlock.ParallelZero(System.Void*, System.Int64)
-  nameWithType: MemoryBlock.ParallelZero(Void*, Int64)
-- uid: Platform.Unsafe.MemoryBlock.ParallelZero*
-  name: ParallelZero
-  href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_ParallelZero_
-  commentId: Overload:Platform.Unsafe.MemoryBlock.ParallelZero
-  isSpec: "True"
-  fullName: Platform.Unsafe.MemoryBlock.ParallelZero
-  nameWithType: MemoryBlock.ParallelZero
 - uid: Platform.Unsafe.MemoryBlock.Zero(System.Void*,System.Int64)
   name: Zero(Void*, Int64)
   href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_Zero_System_Void__System_Int64_
