@@ -10,15 +10,17 @@ namespace Platform.Unsafe
     public static unsafe class MemoryBlock
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void Zero(void* pointer, long capacity)
+        public static void Zero(void* pointer, long capacity) => InitBlock(pointer, 0, (uint)capacity);
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void ParallelZero(void* pointer, long capacity) => Parallel.ForEach(Partitioner.Create(0, capacity), range => ZeroBlock(pointer, range.Item1, range.Item2));
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        private static void ZeroBlock(void* pointer, long from, long to)
         {
-            Parallel.ForEach(Partitioner.Create(0, capacity), range =>
-            {
-                var from = range.Item1;
-                var offset = (void*)((byte*)pointer + from);
-                var length = (uint)(range.Item2 - from);
-                InitBlock(offset, 0, length);
-            });
+            var offset = (void*)((byte*)pointer + from);
+            var length = (uint)(to - from);
+            InitBlock(offset, 0, length);
         }
     }
 }
