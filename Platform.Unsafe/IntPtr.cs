@@ -10,6 +10,7 @@ namespace Platform.Unsafe
     /// <remarks>
     /// Please use System.Runtime.CompilerServices.Unsafe instead.
     /// </remarks>
+    [Obsolete("Please use System.Runtime.CompilerServices.Unsafe instead.")]
     public static class IntPtr<T>
     {
         public static readonly Func<IntPtr, T> GetValue;
