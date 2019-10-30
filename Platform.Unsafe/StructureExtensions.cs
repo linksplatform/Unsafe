@@ -1,5 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using Platform.Hardware.Cpu;
+using static System.Runtime.CompilerServices.Unsafe;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -11,7 +12,7 @@ namespace Platform.Unsafe
         public static byte[] ToBytes<TStruct>(this ref TStruct obj)
             where TStruct : struct
         {
-            var structureSize = System.Runtime.CompilerServices.Unsafe.SizeOf<TStruct>();
+            var structureSize = SizeOf<TStruct>();
             var bytes = new byte[structureSize];
             fixed (byte* pointer = bytes)
             {
@@ -24,7 +25,7 @@ namespace Platform.Unsafe
         public static void CopyTo<TStruct>(this ref TStruct source, void* destination)
             where TStruct : struct
         {
-            var size = System.Runtime.CompilerServices.Unsafe.SizeOf<TStruct>();
+            var size = SizeOf<TStruct>();
             CopyTo(ref source, destination, size);
         }
 
@@ -34,11 +35,11 @@ namespace Platform.Unsafe
         {
             if (CacheLine.Size >= size)
             {
-                System.Runtime.CompilerServices.Unsafe.Copy(destination, ref source);
+                Copy(destination, ref source);
             }
             else
             {
-                System.Runtime.CompilerServices.Unsafe.CopyBlock(destination, System.Runtime.CompilerServices.Unsafe.AsPointer(ref source), (uint)size);
+                CopyBlock(destination, AsPointer(ref source), (uint)size);
             }
         }
     }

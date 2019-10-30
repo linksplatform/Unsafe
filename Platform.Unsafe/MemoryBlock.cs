@@ -1,5 +1,6 @@
 ﻿using System.Collections.Concurrent;
 using System.Threading.Tasks;
+using static System.Runtime.CompilerServices.Unsafe;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -14,7 +15,7 @@ namespace Platform.Unsafe
                 var from = range.Item1;
                 var offset = (void*)((byte*)pointer + from);
                 var length = (uint)(range.Item2 - from);
-                System.Runtime.CompilerServices.Unsafe.InitBlock(offset, 0, length);
+                InitBlock(offset, 0, length);
             });
         }
     }

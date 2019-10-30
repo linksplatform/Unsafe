@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using static System.Runtime.CompilerServices.Unsafe;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -18,6 +19,6 @@ namespace Platform.Unsafe
         /// Этот свойство делает это без выбрасывания исключений для универсальных типов, как это делают <see cref="Marshal.SizeOf{T}()"/> и <see cref="Marshal.SizeOf(Type)"/>.
         /// </para>
         /// </summary>
-        public static int Size { get; } = System.Runtime.CompilerServices.Unsafe.SizeOf<TStruct>();
+        public static int Size { get; } = SizeOf<TStruct>();
     }
 }

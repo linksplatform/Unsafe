@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using Platform.Numbers;
+using static System.Runtime.CompilerServices.Unsafe;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -32,9 +33,9 @@ namespace Platform.Unsafe
         public static IntPtr GetElement<TIndex>(this IntPtr pointer, int elementSize, TIndex index) => pointer.GetElement((long)elementSize, (Integer)(Integer<TIndex>)index);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void WriteElementValue<TValue>(this IntPtr pointer, long index, TValue value) => System.Runtime.CompilerServices.Unsafe.Write((byte*)pointer + (System.Runtime.CompilerServices.Unsafe.SizeOf<TValue>() * index), value);
+        public static void WriteElementValue<TValue>(this IntPtr pointer, long index, TValue value) => Write((byte*)pointer + (SizeOf<TValue>() * index), value);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TValue ReadElementValue<TValue>(this IntPtr pointer, long index) => System.Runtime.CompilerServices.Unsafe.Read<TValue>((byte*)pointer + (System.Runtime.CompilerServices.Unsafe.SizeOf<TValue>() * index));
+        public static TValue ReadElementValue<TValue>(this IntPtr pointer, long index) => Read<TValue>((byte*)pointer + (SizeOf<TValue>() * index));
     }
 }
