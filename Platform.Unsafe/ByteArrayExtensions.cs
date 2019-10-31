@@ -14,7 +14,7 @@ namespace Platform.Unsafe
             where TStruct : struct
         {
             Ensure.OnDebug.ArgumentNotEmpty(bytes, nameof(bytes));
-            Ensure.OnDebug.ArgumentMeetsCriteria(bytes, SameSizeAs<TStruct>, nameof(bytes), "Bytes array should be the same length as struct size.");
+            Ensure.OnDebug.ArgumentMeetsCriteria(bytes, HasSameSizeAs<TStruct>, nameof(bytes), "Bytes array should be the same length as struct size.");
             TStruct structure = default;
             fixed (byte* pointer = bytes)
             {
@@ -23,6 +23,6 @@ namespace Platform.Unsafe
             return structure;
         }
 
-        private static bool SameSizeAs<TStruct>(byte[] array) where TStruct : struct => array.Length == Structure<TStruct>.Size;
+        private static bool HasSameSizeAs<TStruct>(byte[] array) where TStruct : struct => array.Length == Structure<TStruct>.Size;
     }
 }
