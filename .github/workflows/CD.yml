@@ -49,7 +49,7 @@ jobs:
         wget "$SCRIPTS_BASE_URL/publish-release.sh"
         bash ./publish-release.sh
 
-pushNuGetToGitHubPackageRegistry:
+  pushNuGetToGitHubPackageRegistry:
     needs: testAndDeploy
     if: github.event_name == 'push'
     runs-on: windows-latest
