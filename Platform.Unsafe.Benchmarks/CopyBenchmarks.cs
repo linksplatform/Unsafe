@@ -11,28 +11,28 @@ namespace Platform.Unsafe.Benchmarks
     public unsafe class CopyBenchmarks
     {
         [StructLayout(LayoutKind.Explicit)]
-        unsafe struct B64
+        struct B64
         {
             [FieldOffset(0)]
             public fixed byte headerBytes[64];
         }
 
         [StructLayout(LayoutKind.Explicit)]
-        unsafe struct B128
+        struct B128
         {
             [FieldOffset(0)]
             public fixed byte headerBytes[128];
         }
 
         [StructLayout(LayoutKind.Explicit)]
-        unsafe struct B2048
+        struct B2048
         {
             [FieldOffset(0)]
             public fixed byte headerBytes[2048];
         }
 
         [StructLayout(LayoutKind.Explicit)]
-        unsafe struct B4194304
+        struct B4194304
         {
             [FieldOffset(0)]
             public fixed byte headerBytes[4096 * 1024];
