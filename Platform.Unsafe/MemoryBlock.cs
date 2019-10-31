@@ -13,6 +13,7 @@ namespace Platform.Unsafe
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Zero(void* pointer, long capacity)
         {
+            // A way to prevent wasting resources due to Hyper-threading.
             var threads = Environment.ProcessorCount / 2;
             if (threads <= 1)
             {
@@ -20,6 +21,8 @@ namespace Platform.Unsafe
             }
             else
             {
+                // Using 2 threads, because two-channel memory architecture is the most available type.
+                // CPUs are mostly just wait for memory here.
                 threads = 2;
                 Parallel.ForEach(Partitioner.Create(0L, capacity), new ParallelOptions { MaxDegreeOfParallelism = threads }, range => ZeroBlock(pointer, range.Item1, range.Item2));
             }
