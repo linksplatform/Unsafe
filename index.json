@@ -4,11 +4,6 @@
     "title": "Unsafe | LinksPlatform's Platform.Unsafe Library",
     "keywords": "Unsafe LinksPlatform's Platform.Unsafe Class Library. Namespace: Platform.Unsafe Forked from: Konard/LinksPlatform/Platform/Platform.Helpers/Unsafe NuGet package: Platform.Unsafe Documentation PDF file with code for e-readers. Depend on System.Runtime.CompilerServices.Unsafe Platform.Numbers Dependent libraries Platform.Collections.Methods Platform.IO"
   },
-  "api/Platform.Unsafe.html": {
-    "href": "api/Platform.Unsafe.html",
-    "title": "Namespace Platform.Unsafe | LinksPlatform's Platform.Unsafe Library",
-    "keywords": "Namespace Platform.Unsafe Classes ByteArrayExtensions IntPtr<T> IntPtrExtensions MemoryBlock Structure<TStruct> StructureExtensions"
-  },
   "api/Platform.Unsafe.Structure-1.html": {
     "href": "api/Platform.Unsafe.Structure-1.html",
     "title": "Class Structure<TStruct> | LinksPlatform's Platform.Unsafe Library",
@@ -18,6 +13,11 @@
     "href": "api/Platform.Unsafe.StructureExtensions.html",
     "title": "Class StructureExtensions | LinksPlatform's Platform.Unsafe Library",
     "keywords": "Class StructureExtensions Inheritance Object StructureExtensions Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Unsafe Assembly : Platform.Unsafe.dll Syntax public static class StructureExtensions Methods | Improve this Doc View Source ToBytes<TStruct>(ref TStruct) Declaration public static byte[] ToBytes<TStruct>(this ref TStruct obj) where TStruct : struct Parameters Type Name Description TStruct obj Returns Type Description Byte [] Type Parameters Name Description TStruct"
+  },
+  "api/Platform.Unsafe.html": {
+    "href": "api/Platform.Unsafe.html",
+    "title": "Namespace Platform.Unsafe | LinksPlatform's Platform.Unsafe Library",
+    "keywords": "Namespace Platform.Unsafe Classes ByteArrayExtensions IntPtr<T> IntPtrExtensions MemoryBlock Structure<TStruct> StructureExtensions"
   },
   "api/Platform.Unsafe.MemoryBlock.html": {
     "href": "api/Platform.Unsafe.MemoryBlock.html",
