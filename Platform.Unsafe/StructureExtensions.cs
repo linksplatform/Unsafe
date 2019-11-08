@@ -11,7 +11,7 @@ namespace Platform.Unsafe
         public static byte[] ToBytes<TStruct>(this ref TStruct obj)
             where TStruct : struct
         {
-            var bytes = new byte[Structure<ulong>.Size];
+            var bytes = new byte[Structure<TStruct>.Size];
             fixed (byte* pointer = bytes)
             {
                 Copy(pointer, ref obj);
