@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Unsafe Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
-    <VersionPrefix>0.2.1</VersionPrefix>
+    <VersionPrefix>0.2.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net471;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Platform.Unsafe</AssemblyName>
@@ -25,7 +25,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Numbers dependency updated from 0.2.2 to 0.2.3.</PackageReleaseNotes>
+    <PackageReleaseNotes>Wrong size of structure bug fix.</PackageReleaseNotes>
   </PropertyGroup>
   
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
