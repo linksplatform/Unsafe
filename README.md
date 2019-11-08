@@ -21,5 +21,4 @@ NuGet package: [Platform.Unsafe](https://www.nuget.org/packages/Platform.Unsafe)
 *   [Platform.Numbers](https://github.com/linksplatform/Numbers)
 
 ## Dependent libraries
-*   [Platform.Collections.Methods](https://github.com/linksplatform/Collections.Methods)
 *   [Platform.IO](https://github.com/linksplatform/IO)
