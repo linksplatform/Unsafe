@@ -17,7 +17,7 @@ namespace Platform.Unsafe
             var threads = Environment.ProcessorCount / 2;
             if (threads <= 1)
             {
-                InitBlock(pointer, 0, (uint)capacity);
+                ZeroBlock(pointer, 0, capacity);
             }
             else
             {
@@ -29,7 +29,7 @@ namespace Platform.Unsafe
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ZeroBlock(void* pointer, long from, long to)
+        private static void ZeroBlock(void* pointer, long from, long to)
         {
             var offset = (byte*)pointer + from;
             var length = to - from;
