@@ -38,7 +38,7 @@
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.6.0" />
-    <PackageReference Include="Platform.Numbers" Version="0.2.3" />
+    <PackageReference Include="Platform.Numbers" Version="0.3.0" />
   </ItemGroup>
 
 </Project>
