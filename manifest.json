@@ -30,19 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.ByteArrayExtensions.html",
-          "hash": "d3cjOujnmxv7puCiGLQWPg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Unsafe.IntPtr-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Unsafe.IntPtr-1.html",
-          "hash": "1SGKbTb4E7ys69GKHAzLog=="
+          "hash": "yZWasabduHjQBnsdeYzWLQ=="
         }
       },
       "is_incremental": false,
@@ -54,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.IntPtrExtensions.html",
-          "hash": "kD0+8w+ZlanNho0NJpCqXA=="
+          "hash": "yN373lt8+ZMUUQk1qalRdQ=="
         }
       },
       "is_incremental": false,
@@ -66,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.MemoryBlock.html",
-          "hash": "BLM8B5WjURahosYhxHAHeQ=="
+          "hash": "i+xB7hLogbyOCI8oJ2skPQ=="
         }
       },
       "is_incremental": false,
@@ -78,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Structure-1.html",
-          "hash": "cd1cx+cM5sUnsbCsiL8new=="
+          "hash": "qDXRykyE/7ajbv2FhWOL4A=="
         }
       },
       "is_incremental": false,
@@ -90,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.StructureExtensions.html",
-          "hash": "9e5W8a+7+j467SYyhdJ8cQ=="
+          "hash": "3k/+fMHWGlYrp/nasfI+RQ=="
         }
       },
       "is_incremental": false,
@@ -102,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.html",
-          "hash": "6x2K9GuuL6WyeWFSm/tB3Q=="
+          "hash": "XZ7Bp4VROT96bMh+8fZXvA=="
         }
       },
       "is_incremental": false,
@@ -114,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rsGq4kA8vbn0hiEPoXTD0g=="
+          "hash": "/+4EgGd+BKahP884+VYCNQ=="
         }
       },
       "is_incremental": false,
@@ -154,16 +142,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 1,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 7,
           "skipped_file_count": 0
         }
       }
