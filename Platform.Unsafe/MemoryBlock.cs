@@ -13,7 +13,7 @@ namespace Platform.Unsafe
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Zero(void* pointer, long capacity)
         {
-            // A way to prevent wasting resources due to Hyper-threading.
+            // A way to prevent wasting resources due to Hyper-Threading.
             var threads = Environment.ProcessorCount / 2;
             if (threads <= 1)
             {
@@ -21,19 +21,26 @@ namespace Platform.Unsafe
             }
             else
             {
-                // Using 2 threads, because two-channel memory architecture is the most available type.
-                // CPUs are mostly just wait for memory here.
+                // Using 2 threads because two-channel memory architecture is the most available type.
+                // CPUs mostly just wait for memory here.
                 threads = 2;
                 Parallel.ForEach(Partitioner.Create(0L, capacity), new ParallelOptions { MaxDegreeOfParallelism = threads }, range => ZeroBlock(pointer, range.Item1, range.Item2));
             }
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static void ZeroBlock(void* pointer, long from, long to)
+        public static void ZeroBlock(void* pointer, long from, long to)
         {
-            var offset = (void*)((byte*)pointer + from);
-            var length = (uint)(to - from);
-            InitBlock(offset, 0, length);
+            var offset = (byte*)pointer + from;
+            var length = to - from;
+            var uintMaxValue = uint.MaxValue;
+            while (length > uintMaxValue)
+            {
+                InitBlock(offset, 0, uintMaxValue);
+                length -= uintMaxValue;
+                offset += uintMaxValue;
+            }
+            InitBlock(offset, 0, unchecked((uint)length));
         }
     }
 }
