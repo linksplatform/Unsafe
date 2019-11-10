@@ -86,19 +86,6 @@ references:
   isSpec: "True"
   fullName: Platform.Unsafe.MemoryBlock.Zero
   nameWithType: MemoryBlock.Zero
-- uid: Platform.Unsafe.MemoryBlock.ZeroBlock(System.Void*,System.Int64,System.Int64)
-  name: ZeroBlock(Void*, Int64, Int64)
-  href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_ZeroBlock_System_Void__System_Int64_System_Int64_
-  commentId: M:Platform.Unsafe.MemoryBlock.ZeroBlock(System.Void*,System.Int64,System.Int64)
-  fullName: Platform.Unsafe.MemoryBlock.ZeroBlock(System.Void*, System.Int64, System.Int64)
-  nameWithType: MemoryBlock.ZeroBlock(Void*, Int64, Int64)
-- uid: Platform.Unsafe.MemoryBlock.ZeroBlock*
-  name: ZeroBlock
-  href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_ZeroBlock_
-  commentId: Overload:Platform.Unsafe.MemoryBlock.ZeroBlock
-  isSpec: "True"
-  fullName: Platform.Unsafe.MemoryBlock.ZeroBlock
-  nameWithType: MemoryBlock.ZeroBlock
 - uid: Platform.Unsafe.Structure`1
   name: Structure<TStruct>
   href: api/Platform.Unsafe.Structure-1.html
