@@ -1,0 +1,136 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Platform.Unsafe
+  name: Platform.Unsafe
+  href: api/Platform.Unsafe.html
+  commentId: N:Platform.Unsafe
+  fullName: Platform.Unsafe
+  nameWithType: Platform.Unsafe
+- uid: Platform.Unsafe.ByteArrayExtensions
+  name: ByteArrayExtensions
+  href: api/Platform.Unsafe.ByteArrayExtensions.html
+  commentId: T:Platform.Unsafe.ByteArrayExtensions
+  fullName: Platform.Unsafe.ByteArrayExtensions
+  nameWithType: ByteArrayExtensions
+- uid: Platform.Unsafe.ByteArrayExtensions.ToStructure*
+  name: ToStructure
+  href: api/Platform.Unsafe.ByteArrayExtensions.html#Platform_Unsafe_ByteArrayExtensions_ToStructure_
+  commentId: Overload:Platform.Unsafe.ByteArrayExtensions.ToStructure
+  isSpec: "True"
+  fullName: Platform.Unsafe.ByteArrayExtensions.ToStructure
+  nameWithType: ByteArrayExtensions.ToStructure
+- uid: Platform.Unsafe.ByteArrayExtensions.ToStructure``1(System.Byte[])
+  name: ToStructure<TStruct>(Byte[])
+  href: api/Platform.Unsafe.ByteArrayExtensions.html#Platform_Unsafe_ByteArrayExtensions_ToStructure__1_System_Byte___
+  commentId: M:Platform.Unsafe.ByteArrayExtensions.ToStructure``1(System.Byte[])
+  name.vb: ToStructure(Of TStruct)(Byte())
+  fullName: Platform.Unsafe.ByteArrayExtensions.ToStructure<TStruct>(System.Byte[])
+  fullName.vb: Platform.Unsafe.ByteArrayExtensions.ToStructure(Of TStruct)(System.Byte())
+  nameWithType: ByteArrayExtensions.ToStructure<TStruct>(Byte[])
+  nameWithType.vb: ByteArrayExtensions.ToStructure(Of TStruct)(Byte())
+- uid: Platform.Unsafe.IntPtrExtensions
+  name: IntPtrExtensions
+  href: api/Platform.Unsafe.IntPtrExtensions.html
+  commentId: T:Platform.Unsafe.IntPtrExtensions
+  fullName: Platform.Unsafe.IntPtrExtensions
+  nameWithType: IntPtrExtensions
+- uid: Platform.Unsafe.IntPtrExtensions.ReadElementValue*
+  name: ReadElementValue
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_ReadElementValue_
+  commentId: Overload:Platform.Unsafe.IntPtrExtensions.ReadElementValue
+  isSpec: "True"
+  fullName: Platform.Unsafe.IntPtrExtensions.ReadElementValue
+  nameWithType: IntPtrExtensions.ReadElementValue
+- uid: Platform.Unsafe.IntPtrExtensions.ReadElementValue``1(System.IntPtr,System.Int64)
+  name: ReadElementValue<TValue>(IntPtr, Int64)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_ReadElementValue__1_System_IntPtr_System_Int64_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.ReadElementValue``1(System.IntPtr,System.Int64)
+  name.vb: ReadElementValue(Of TValue)(IntPtr, Int64)
+  fullName: Platform.Unsafe.IntPtrExtensions.ReadElementValue<TValue>(System.IntPtr, System.Int64)
+  fullName.vb: Platform.Unsafe.IntPtrExtensions.ReadElementValue(Of TValue)(System.IntPtr, System.Int64)
+  nameWithType: IntPtrExtensions.ReadElementValue<TValue>(IntPtr, Int64)
+  nameWithType.vb: IntPtrExtensions.ReadElementValue(Of TValue)(IntPtr, Int64)
+- uid: Platform.Unsafe.IntPtrExtensions.WriteElementValue*
+  name: WriteElementValue
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_WriteElementValue_
+  commentId: Overload:Platform.Unsafe.IntPtrExtensions.WriteElementValue
+  isSpec: "True"
+  fullName: Platform.Unsafe.IntPtrExtensions.WriteElementValue
+  nameWithType: IntPtrExtensions.WriteElementValue
+- uid: Platform.Unsafe.IntPtrExtensions.WriteElementValue``1(System.IntPtr,System.Int64,``0)
+  name: WriteElementValue<TValue>(IntPtr, Int64, TValue)
+  href: api/Platform.Unsafe.IntPtrExtensions.html#Platform_Unsafe_IntPtrExtensions_WriteElementValue__1_System_IntPtr_System_Int64___0_
+  commentId: M:Platform.Unsafe.IntPtrExtensions.WriteElementValue``1(System.IntPtr,System.Int64,``0)
+  name.vb: WriteElementValue(Of TValue)(IntPtr, Int64, TValue)
+  fullName: Platform.Unsafe.IntPtrExtensions.WriteElementValue<TValue>(System.IntPtr, System.Int64, TValue)
+  fullName.vb: Platform.Unsafe.IntPtrExtensions.WriteElementValue(Of TValue)(System.IntPtr, System.Int64, TValue)
+  nameWithType: IntPtrExtensions.WriteElementValue<TValue>(IntPtr, Int64, TValue)
+  nameWithType.vb: IntPtrExtensions.WriteElementValue(Of TValue)(IntPtr, Int64, TValue)
+- uid: Platform.Unsafe.MemoryBlock
+  name: MemoryBlock
+  href: api/Platform.Unsafe.MemoryBlock.html
+  commentId: T:Platform.Unsafe.MemoryBlock
+  fullName: Platform.Unsafe.MemoryBlock
+  nameWithType: MemoryBlock
+- uid: Platform.Unsafe.MemoryBlock.Zero(System.Void*,System.Int64)
+  name: Zero(Void*, Int64)
+  href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_Zero_System_Void__System_Int64_
+  commentId: M:Platform.Unsafe.MemoryBlock.Zero(System.Void*,System.Int64)
+  fullName: Platform.Unsafe.MemoryBlock.Zero(System.Void*, System.Int64)
+  nameWithType: MemoryBlock.Zero(Void*, Int64)
+- uid: Platform.Unsafe.MemoryBlock.Zero*
+  name: Zero
+  href: api/Platform.Unsafe.MemoryBlock.html#Platform_Unsafe_MemoryBlock_Zero_
+  commentId: Overload:Platform.Unsafe.MemoryBlock.Zero
+  isSpec: "True"
+  fullName: Platform.Unsafe.MemoryBlock.Zero
+  nameWithType: MemoryBlock.Zero
+- uid: Platform.Unsafe.Structure`1
+  name: Structure<TStruct>
+  href: api/Platform.Unsafe.Structure-1.html
+  commentId: T:Platform.Unsafe.Structure`1
+  name.vb: Structure(Of TStruct)
+  fullName: Platform.Unsafe.Structure<TStruct>
+  fullName.vb: Platform.Unsafe.Structure(Of TStruct)
+  nameWithType: Structure<TStruct>
+  nameWithType.vb: Structure(Of TStruct)
+- uid: Platform.Unsafe.Structure`1.Size
+  name: Size
+  href: api/Platform.Unsafe.Structure-1.html#Platform_Unsafe_Structure_1_Size
+  commentId: P:Platform.Unsafe.Structure`1.Size
+  fullName: Platform.Unsafe.Structure<TStruct>.Size
+  fullName.vb: Platform.Unsafe.Structure(Of TStruct).Size
+  nameWithType: Structure<TStruct>.Size
+  nameWithType.vb: Structure(Of TStruct).Size
+- uid: Platform.Unsafe.Structure`1.Size*
+  name: Size
+  href: api/Platform.Unsafe.Structure-1.html#Platform_Unsafe_Structure_1_Size_
+  commentId: Overload:Platform.Unsafe.Structure`1.Size
+  isSpec: "True"
+  fullName: Platform.Unsafe.Structure<TStruct>.Size
+  fullName.vb: Platform.Unsafe.Structure(Of TStruct).Size
+  nameWithType: Structure<TStruct>.Size
+  nameWithType.vb: Structure(Of TStruct).Size
+- uid: Platform.Unsafe.StructureExtensions
+  name: StructureExtensions
+  href: api/Platform.Unsafe.StructureExtensions.html
+  commentId: T:Platform.Unsafe.StructureExtensions
+  fullName: Platform.Unsafe.StructureExtensions
+  nameWithType: StructureExtensions
+- uid: Platform.Unsafe.StructureExtensions.ToBytes*
+  name: ToBytes
+  href: api/Platform.Unsafe.StructureExtensions.html#Platform_Unsafe_StructureExtensions_ToBytes_
+  commentId: Overload:Platform.Unsafe.StructureExtensions.ToBytes
+  isSpec: "True"
+  fullName: Platform.Unsafe.StructureExtensions.ToBytes
+  nameWithType: StructureExtensions.ToBytes
+- uid: Platform.Unsafe.StructureExtensions.ToBytes``1(``0@)
+  name: ToBytes<TStruct>(ref TStruct)
+  href: api/Platform.Unsafe.StructureExtensions.html#Platform_Unsafe_StructureExtensions_ToBytes__1___0__
+  commentId: M:Platform.Unsafe.StructureExtensions.ToBytes``1(``0@)
+  name.vb: ToBytes(Of TStruct)(ByRef TStruct)
+  fullName: Platform.Unsafe.StructureExtensions.ToBytes<TStruct>(ref TStruct)
+  fullName.vb: Platform.Unsafe.StructureExtensions.ToBytes(Of TStruct)(ByRef TStruct)
+  nameWithType: StructureExtensions.ToBytes<TStruct>(ref TStruct)
+  nameWithType.vb: StructureExtensions.ToBytes(Of TStruct)(ByRef TStruct)
