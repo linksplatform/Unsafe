@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
     <VersionPrefix>0.3.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks>net471;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1</TargetFrameworks>
     <AssemblyName>Platform.Unsafe</AssemblyName>
     <PackageId>Platform.Unsafe</PackageId>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
