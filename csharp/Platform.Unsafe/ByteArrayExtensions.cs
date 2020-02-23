@@ -23,6 +23,7 @@ namespace Platform.Unsafe
             return structure;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static bool HasSameSizeAs<TStruct>(byte[] array) where TStruct : struct => array.Length == Structure<TStruct>.Size;
     }
 }
