@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Diagnostics" Version="0.0.3" />
+    <PackageReference Include="Platform.Diagnostics" Version="0.1.0" />
   </ItemGroup>
 
 </Project>
