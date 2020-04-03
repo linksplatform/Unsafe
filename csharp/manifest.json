@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.ByteArrayExtensions.html",
-          "hash": "oVCVWEYe4JbZq77+DUCPYg=="
+          "hash": "PIyB87bia0gasBH5Vi6X5w=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.IntPtrExtensions.html",
-          "hash": "xr38hhsOUjOMficIWjjf0g=="
+          "hash": "i0wONGJ3BkLFSs02BfjTsA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.MemoryBlock.html",
-          "hash": "Zdq5J7gDOpCUK7lEX5b53A=="
+          "hash": "j7zgImIrPzNo1vEgvSFs+Q=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.Structure-1.html",
-          "hash": "DqjZcdInwR19+0eUftKzYQ=="
+          "hash": "KEKFp4HCoxpsHyhJpDT9rA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Unsafe.StructureExtensions.html",
-          "hash": "SxN5qut7mby/jo/iE+Ma7Q=="
+          "hash": "1dAGZtcgOdWnfjzHmEkSwg=="
         }
       },
       "is_incremental": false,
