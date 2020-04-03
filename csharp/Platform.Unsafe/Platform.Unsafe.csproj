@@ -41,7 +41,7 @@ Performance optimizations.</PackageReleaseNotes>
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.7.1" />
-    <PackageReference Include="Platform.Numbers" Version="0.4.0" />
+    <PackageReference Include="Platform.Numbers" Version="0.4.1" />
   </ItemGroup>
 
 </Project>
