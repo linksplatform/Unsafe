@@ -7,14 +7,14 @@
 
 LinksPlatform's Platform.Unsafe Class Library.
 
-Namespace: [Platform.Unsafe](https://linksplatform.github.io/Unsafe/api/Platform.Unsafe.html)
+Namespace: [Platform.Unsafe](https://linksplatform.github.io/Unsafe/csharp/api/Platform.Unsafe.html)
 
 Forked from: [Konard/LinksPlatform/Platform/Platform.Helpers/Unsafe](https://github.com/Konard/LinksPlatform/tree/7e73fb096a180699192d6861f853cf44f803f909/Platform/Platform.Helpers/Unsafe)
 
 NuGet package: [Platform.Unsafe](https://www.nuget.org/packages/Platform.Unsafe)
 
 ## [Documentation](https://linksplatform.github.io/Unsafe)
-[PDF file](https://linksplatform.github.io/Unsafe/Platform.Unsafe.pdf) with code for e-readers.
+[PDF file](https://linksplatform.github.io/Unsafe/csharp/Platform.Unsafe.pdf) with code for e-readers.
 
 ## Depend on
 *   [System.Runtime.CompilerServices.Unsafe](https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe)
