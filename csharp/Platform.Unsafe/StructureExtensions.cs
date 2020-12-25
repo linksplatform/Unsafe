@@ -5,6 +5,9 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe
 {
+ /// <para></para>
+    /// <para></para>
+    /// </summary>
     public unsafe static class StructureExtensions
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
