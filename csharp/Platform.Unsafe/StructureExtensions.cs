@@ -5,11 +5,16 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe
 {
- /// <para></para>
-    /// <para></para>
-    /// </summary>
+      ///<summary>
+      /// <para></para>
+      /// <para></para>
+      /// </summary>
     public unsafe static class StructureExtensions
     {
+      ///<summary>
+      /// <para></para>
+      /// <para></para>
+      /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static byte[] ToBytes<TStruct>(this ref TStruct obj)
             where TStruct : struct
