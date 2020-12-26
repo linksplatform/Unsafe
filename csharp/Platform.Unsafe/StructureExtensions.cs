@@ -6,14 +6,22 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para></para>
-    /// <para></para>
+    /// <para>
+    /// this process does something
+    /// </para>
+    /// <para>
+    /// этот процесс что-то делает
+    /// </para>
     /// </summary>
     public unsafe static class StructureExtensions
     {
         /// <summary>
-        /// <para></para>
-        /// <para></para>
+        /// <para>
+        /// this process does something
+        /// </para>
+        /// <para>
+        /// этот процесс что-то делает
+        /// </para>
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static byte[] ToBytes<TStruct>(this ref TStruct obj)
