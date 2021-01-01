@@ -6,8 +6,8 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>this process does something</para>
-    /// <para>этот процесс что-то делает</para>
+    /// <para>defines code as unsafe</para>
+    /// <para>Определяет код, как небезопасный</para>
     /// </summary>
     public unsafe static class StructureExtensions
     {
