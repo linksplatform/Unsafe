@@ -6,8 +6,8 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>defines code as unsafe</para>
-    /// <para>Определяет код, как небезопасный</para>
+    /// <para>Provides a set of extension methods for <TStruct>.</para>
+    /// <para>Предоставляет набор методов расширения для структур <TStruct>.</para>
     /// </summary>
     public unsafe static class StructureExtensions
     {
