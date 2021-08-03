@@ -1,7 +1,6 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a37eddc3f5c4f458ffbf2da3223fc81)](https://app.codacy.com/gh/linksplatform/Unsafe?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Unsafe&utm_campaign=Badge_Grade_Settings)
 [![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Unsafe)](https://www.nuget.org/packages/Platform.Unsafe)
 [![Actions Status](https://github.com/linksplatform/Unsafe/workflows/CD/badge.svg)](https://github.com/linksplatform/Unsafe/actions?workflow=CD)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f44d620bd580471fb291b17fab31e58a)](https://app.codacy.com/app/drakonard/Unsafe?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Unsafe&utm_campaign=Badge_Grade_Dashboard)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a37eddc3f5c4f458ffbf2da3223fc81)](https://app.codacy.com/gh/linksplatform/Unsafe?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Unsafe&utm_campaign=Badge_Grade_Settings)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/unsafe/badge)](https://www.codefactor.io/repository/github/linksplatform/unsafe)
 
 # [Unsafe](https://github.com/linksplatform/Unsafe)
