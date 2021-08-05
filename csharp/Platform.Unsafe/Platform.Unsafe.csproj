@@ -40,7 +40,7 @@ Platform.Numbers dependency updated from 0.4.1 to 0.5.0.</PackageReleaseNotes>
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0" />
-    <PackageReference Include="Platform.Numbers" Version="0.5.0" />
+    <PackageReference Include="Platform.Numbers" Version="0.5.1" />
   </ItemGroup>
 
 </Project>
