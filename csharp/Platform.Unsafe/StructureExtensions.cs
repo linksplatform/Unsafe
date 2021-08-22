@@ -1,4 +1,4 @@
-﻿using System.Runtime.CompilerServices;
+using System.Runtime.CompilerServices;
 using static System.Runtime.CompilerServices.Unsafe;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member

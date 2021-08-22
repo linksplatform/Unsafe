@@ -1,9 +1,21 @@
-﻿using Xunit;
+using Xunit;
 
 namespace Platform.Unsafe.Tests
 {
+    /// <summary>
+    /// <para>
+    /// Represents the struct and bytes conversion tests.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class StructAndBytesConversionTests
     {
+        /// <summary>
+        /// <para>
+        /// Tests that struct to bytes test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void StructToBytesTest()
         {
@@ -15,6 +27,12 @@ namespace Platform.Unsafe.Tests
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Tests that bytes to struct test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void BytesToStructTest()
         {

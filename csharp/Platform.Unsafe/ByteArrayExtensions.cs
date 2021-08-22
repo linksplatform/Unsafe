@@ -1,4 +1,4 @@
-﻿using Platform.Exceptions;
+using Platform.Exceptions;
 using Platform.Collections;
 using System.Runtime.CompilerServices;
 using static System.Runtime.CompilerServices.Unsafe;
@@ -7,8 +7,32 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe
 {
+    /// <summary>
+    /// <para>
+    /// Represents the byte array extensions.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public unsafe static class ByteArrayExtensions
     {
+        /// <summary>
+        /// <para>
+        /// Returns the structure using the specified bytes.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TStruct">
+        /// <para>The struct.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="bytes">
+        /// <para>The bytes.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The structure.</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TStruct ToStructure<TStruct>(this byte[] bytes)
             where TStruct : struct
@@ -23,6 +47,24 @@ namespace Platform.Unsafe
             return structure;
         }
 
+        /// <summary>
+        /// <para>
+        /// Determines whether has same size as.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TStruct">
+        /// <para>The struct.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="array">
+        /// <para>The array.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static bool HasSameSizeAs<TStruct>(byte[] array) where TStruct : struct => array.Length == Structure<TStruct>.Size;
     }

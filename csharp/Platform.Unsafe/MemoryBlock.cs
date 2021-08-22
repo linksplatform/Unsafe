@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -8,8 +8,28 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe
 {
+    /// <summary>
+    /// <para>
+    /// Represents the memory block.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static unsafe class MemoryBlock
     {
+        /// <summary>
+        /// <para>
+        /// Zeroes the pointer.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="pointer">
+        /// <para>The pointer.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="capacity">
+        /// <para>The capacity.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Zero(void* pointer, long capacity)
         {
@@ -28,6 +48,24 @@ namespace Platform.Unsafe
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Zeroes the block using the specified pointer.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="pointer">
+        /// <para>The pointer.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="from">
+        /// <para>The from.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="to">
+        /// <para>The to.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static void ZeroBlock(void* pointer, long from, long to)
         {

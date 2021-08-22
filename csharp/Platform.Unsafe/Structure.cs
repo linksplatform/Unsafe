@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using static System.Runtime.CompilerServices.Unsafe;
@@ -7,6 +7,12 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe
 {
+    /// <summary>
+    /// <para>
+    /// Represents the structure.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static class Structure<TStruct>
         where TStruct : struct
     {

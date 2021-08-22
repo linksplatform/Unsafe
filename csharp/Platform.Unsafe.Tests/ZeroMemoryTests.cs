@@ -1,9 +1,21 @@
-﻿using Xunit;
+using Xunit;
 
 namespace Platform.Unsafe.Tests
 {
+    /// <summary>
+    /// <para>
+    /// Represents the zero memory tests.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     public static unsafe class ZeroMemoryTests
     {
+        /// <summary>
+        /// <para>
+        /// Tests that zero memory test.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [Fact]
         public static void ZeroMemoryTest()
         {
