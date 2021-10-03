@@ -35,9 +35,7 @@ namespace Platform.Unsafe.Tests
             public readonly T F2;
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that unsafe class size of test.
+        private size of test.
         /// </para>
         /// <para></para>
         /// </summary>

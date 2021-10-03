@@ -13,9 +13,7 @@ namespace Platform.Unsafe.Tests
     /// </summary>
     public unsafe class IntPtrExtensionsTests
     {
-        /// <summary>
-        /// <para>
-        /// Tests that read and write operations for pointer values unsafe class methods test.
+        private methods test.
         /// </para>
         /// <para></para>
         /// </summary>
