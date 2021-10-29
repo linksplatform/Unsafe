@@ -92,10 +92,40 @@ namespace Platform.Unsafe.Benchmarks
             public fixed byte headerBytes[4096 * 1024];
         }
 
+        /// <summary>
+        /// <para>
+        /// The array.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static byte[] _array;
+        /// <summary>
+        /// <para>
+        /// The 64.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static B64 _b64;
+        /// <summary>
+        /// <para>
+        /// The 128.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static B128 _b128;
+        /// <summary>
+        /// <para>
+        /// The 2048.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static B2048 _b2048;
+        /// <summary>
+        /// <para>
+        /// The 4194304.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private static B4194304 _b4194304;
 
         /// <summary>
