@@ -46,7 +46,26 @@ namespace Platform.Unsafe
             }
             return structure;
         }
-[MethodImpl(MethodImplOptions.AggressiveInlining)]
+
+        /// <summary>
+        /// <para>
+        /// Determines whether has same size as.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="TStruct">
+        /// <para>The struct.</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="array">
+        /// <para>The array.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static bool HasSameSizeAs<TStruct>(byte[] array) where TStruct : struct => array.Length == Structure<TStruct>.Size;
     }
 }
