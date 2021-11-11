@@ -47,26 +47,7 @@ namespace Platform.Unsafe
                 Parallel.ForEach(Partitioner.Create(0L, capacity), new ParallelOptions { MaxDegreeOfParallelism = threads }, range => ZeroBlock(pointer, range.Item1, range.Item2));
             }
         }
-
-        /// <summary>
-        /// <para>
-        /// Zeroes the block using the specified pointer.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <param name="pointer">
-        /// <para>The pointer.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="from">
-        /// <para>The from.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="to">
-        /// <para>The to.</para>
-        /// <para></para>
-        /// </param>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static void ZeroBlock(void* pointer, long from, long to)
         {
             var offset = (byte*)pointer + from;

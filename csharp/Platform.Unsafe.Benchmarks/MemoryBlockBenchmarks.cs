@@ -16,12 +16,6 @@ namespace Platform.Unsafe.Benchmarks
     [MemoryDiagnoser]
     public unsafe class MemoryBlockBenchmarks
     {
-        /// <summary>
-        /// <para>
-        /// The array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private static byte[] _array;
 
         /// <summary>
