@@ -6,88 +6,34 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe.Benchmarks
 {
-    /// <summary>
-    /// <para>
-    /// Represents the copy benchmarks.
-    /// </para>
-    /// <para></para>
-    /// </summary>
     [SimpleJob]
     [MemoryDiagnoser]
     public unsafe class CopyBenchmarks
     {
-        /// <summary>
-        /// <para>
-        /// The 64.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [StructLayout(LayoutKind.Explicit)]
         struct B64
         {
-            /// <summary>
-            /// <para>
-            /// The header bytes.
-            /// </para>
-            /// <para></para>
-            /// </summary>
             [FieldOffset(0)]
             public fixed byte headerBytes[64];
         }
 
-        /// <summary>
-        /// <para>
-        /// The 128.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [StructLayout(LayoutKind.Explicit)]
         struct B128
         {
-            /// <summary>
-            /// <para>
-            /// The header bytes.
-            /// </para>
-            /// <para></para>
-            /// </summary>
             [FieldOffset(0)]
             public fixed byte headerBytes[128];
         }
 
-        /// <summary>
-        /// <para>
-        /// The 2048.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [StructLayout(LayoutKind.Explicit)]
         struct B2048
         {
-            /// <summary>
-            /// <para>
-            /// The header bytes.
-            /// </para>
-            /// <para></para>
-            /// </summary>
             [FieldOffset(0)]
             public fixed byte headerBytes[2048];
         }
 
-        /// <summary>
-        /// <para>
-        /// The 4194304.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [StructLayout(LayoutKind.Explicit)]
         struct B4194304
         {
-            /// <summary>
-            /// <para>
-            /// The header bytes.
-            /// </para>
-            /// <para></para>
-            /// </summary>
             [FieldOffset(0)]
             public fixed byte headerBytes[4096 * 1024];
         }
@@ -97,24 +43,12 @@ namespace Platform.Unsafe.Benchmarks
         private static B2048 _b2048;
         private static B4194304 _b4194304;
 
-        /// <summary>
-        /// <para>
-        /// Setup.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [GlobalSetup]
         public static void Setup()
         {
             _array = new byte[4096 * 1024];
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the 64 bytes to array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void Copy64BytesToArray()
         {
@@ -124,12 +58,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the block 64 bytes to array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void CopyBlock64BytesToArray()
         {
@@ -139,12 +67,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the 128 bytes to array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void Copy128BytesToArray()
         {
@@ -154,12 +76,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the block 128 bytes to array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void CopyBlock128BytesToArray()
         {
@@ -169,12 +85,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the 2048 bytes to array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void Copy2048BytesToArray()
         {
@@ -184,12 +94,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the block 2048 bytes to array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void CopyBlock2048BytesToArray()
         {
@@ -199,12 +103,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the 4194304 bytes to array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void Copy4194304BytesToArray()
         {
@@ -214,12 +112,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the block 4194304 bytes to array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void CopyBlock4194304BytesToArray()
         {
@@ -229,12 +121,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the 64 bytes from array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void Copy64BytesFromArray()
         {
@@ -244,12 +130,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the block 64 bytes from array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void CopyBlock64BytesFromArray()
         {
@@ -259,12 +139,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the 128 bytes from array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void Copy128BytesFromArray()
         {
@@ -274,12 +148,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the block 128 bytes from array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void CopyBlock128BytesFromArray()
         {
@@ -289,12 +157,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the 2048 bytes from array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void Copy2048BytesFromArray()
         {
@@ -304,12 +166,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the block 2048 bytes from array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void CopyBlock2048BytesFromArray()
         {
@@ -319,12 +175,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the 4194304 bytes from array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void Copy4194304BytesFromArray()
         {
@@ -334,12 +184,6 @@ namespace Platform.Unsafe.Benchmarks
             }
         }
 
-        /// <summary>
-        /// <para>
-        /// Copies the block 4194304 bytes from array.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Benchmark]
         public void CopyBlock4194304BytesFromArray()
         {
