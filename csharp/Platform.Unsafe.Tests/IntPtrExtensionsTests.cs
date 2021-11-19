@@ -5,20 +5,8 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe.Tests
 {
-    /// <summary>
-    /// <para>
-    /// Represents the int ptr extensions tests.
-    /// </para>
-    /// <para></para>
-    /// </summary>
     public unsafe class IntPtrExtensionsTests
     {
-        /// <summary>
-        /// <para>
-        /// Tests that read and write operations for pointer values unsafe class methods test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public void ReadAndWriteOperationsForPointerValuesUnsafeClassMethodsTest()
         {
@@ -28,12 +16,6 @@ namespace Platform.Unsafe.Tests
             Marshal.FreeHGlobal((IntPtr)pointer);
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that element offset operations for pointer values test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public void ElementOffsetOperationsForPointerValuesTest()
         {
