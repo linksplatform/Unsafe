@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Unsafe Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
-    <VersionPrefix>0.5.1</VersionPrefix>
+    <VersionPrefix>0.5.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5;net6</TargetFrameworks>
     <AssemblyName>Platform.Unsafe</AssemblyName>
@@ -25,7 +25,10 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Numbers dependency updated from 0.5.0 to 0.5.1.</PackageReleaseNotes>
+    <PackageReleaseNotes>.NET 6 support is added.
+System.Runtime.CompilerServices.Unsafe dependency is updated from 5.0.0 to 6.0.0.
+Microsoft.SourceLink.GitHub dependency is updated from 1.0.0 to 1.1.1.
+Platform.Numbers dependency updated from 0.5.1 to 0.5.2.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   
@@ -39,7 +42,7 @@
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
-    <PackageReference Include="Platform.Numbers" Version="0.5.1" />
+    <PackageReference Include="Platform.Numbers" Version="0.5.2" />
   </ItemGroup>
 
 </Project>
