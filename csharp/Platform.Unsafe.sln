@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe", "csharp\Platform.Unsafe\Platform.Unsafe.csproj", "{72078A81-859A-45A7-BD62-95866C8F1D21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe", "Platform.Unsafe\Platform.Unsafe.csproj", "{72078A81-859A-45A7-BD62-95866C8F1D21}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe.Benchmarks", "csharp\Platform.Unsafe.Benchmarks\Platform.Unsafe.Benchmarks.csproj", "{3E5A8F32-9B36-4E3C-B043-A38675C9A47C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe.Benchmarks", "Platform.Unsafe.Benchmarks\Platform.Unsafe.Benchmarks.csproj", "{3E5A8F32-9B36-4E3C-B043-A38675C9A47C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe.Tests", "csharp\Platform.Unsafe.Tests\Platform.Unsafe.Tests.csproj", "{75BEE714-A87F-402C-837E-F13B1B5D3ADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Unsafe.Tests", "Platform.Unsafe.Tests\Platform.Unsafe.Tests.csproj", "{75BEE714-A87F-402C-837E-F13B1B5D3ADA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
