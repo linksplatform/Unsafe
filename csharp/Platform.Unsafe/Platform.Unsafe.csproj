@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Unsafe Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
-    <VersionPrefix>0.5.2</VersionPrefix>
+    <VersionPrefix>0.6.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.Unsafe</AssemblyName>
@@ -13,7 +13,7 @@
     <PackageTags>LinksPlatform;Unsafe;ByteArrayExtensions;IntPtrExtensions;MemoryBlock;Structure;StructureExtensions</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Unsafe</PackageProjectUrl>
-    <PackageLicenseExpression>Unlicensed</PackageLicenseExpression>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/linksplatform/Unsafe</RepositoryUrl>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -24,10 +24,9 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>.NET 6 support is added.
-System.Runtime.CompilerServices.Unsafe dependency is updated from 5.0.0 to 6.0.0.
-Microsoft.SourceLink.GitHub dependency is updated from 1.0.0 to 1.1.1.
-Platform.Numbers dependency updated from 0.5.1 to 0.5.2.</PackageReleaseNotes>
+    <PackageReleaseNotes>.Target frameworks are changed to net7.
+License is changed to Unlicense.
+Platform.Numbers dependency updated from 0.5.2 to 0.6.0.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   
@@ -41,7 +40,7 @@ Platform.Numbers dependency updated from 0.5.1 to 0.5.2.</PackageReleaseNotes>
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
-    <PackageReference Include="Platform.Numbers" Version="0.5.2" />
+    <PackageReference Include="Platform.Numbers" Version="0.6.0" />
   </ItemGroup>
 
 </Project>
