@@ -24,9 +24,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>.Target frameworks are changed to net7.
-License is changed to Unlicense.
-Platform.Numbers dependency updated from 0.5.2 to 0.6.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Numbers dependency is updated to 0.9.0.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   
@@ -35,12 +33,12 @@ Platform.Numbers dependency updated from 0.5.2 to 0.6.0.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
-    <PackageReference Include="Platform.Numbers" Version="0.6.0" />
+    <PackageReference Include="Platform.Numbers" Version="0.9.0" />
   </ItemGroup>
 
 </Project>
