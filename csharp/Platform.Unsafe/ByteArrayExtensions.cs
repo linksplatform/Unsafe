@@ -8,7 +8,7 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>Represents an extension of an array of bytes of the type <typeparamref name="TStruct"/>.</para>
+    /// <para>Represents an extension of an array of bytes of type <typeparamref name="TStruct"/>.</para>
     /// <para>Представляет расширения массивa байтов типа <typeparamref name="TStruct"/>.</para>
     /// </summary>
     public unsafe static class ByteArrayExtensions
@@ -18,8 +18,9 @@ namespace Platform.Unsafe
         /// <para>Возвращает <paramref name="structure"/> при закреплённом <paramref name="pointer"/> равный указанным <paramref name="bytes"/>, чтобы не он перемещался при копировании.</para>
         /// </summary>
         /// <typeparam name="TStruct"><para>The element`s structure type.</para><para>Тип структуры элемента.</para></typeparam>
-        /// <param name="bytes"><para>The bytes.</para><para>Байты.</para></param>
-        /// <param name="nameof(bytes)"><para>The string literal <paramref name="bytes"/>.</para><para>Строковый литерал <paramref name="bytes"/>.</para></param>
+        /// <param name="bytes">
+        /// <para>An array of bytes of type <typeparamref name="TStruct"/>.</para>
+        /// <para>Массив байтов типа <typeparamref name="TStruct"/>.</para></param>
         /// <param name="structure"><para>An array of bytes of the type <typeparamref name="TStruct"/>.</para><para>Массив байтов типа <typeparamref name="TStruct"/>.</para></param>
         /// <returns><para>The <paramref name="structure"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
