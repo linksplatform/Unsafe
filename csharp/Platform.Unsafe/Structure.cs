@@ -8,10 +8,8 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>
-    /// Represents the structure.
-    /// </para>
-    /// <para></para>
+    /// <para>Represents an extension of a structure of type <typeparamref name="Struct"/>.</para>
+    /// <para>Представляет расширение структуры типа <typeparamref name="TStruct"/>.</para>
     /// </summary>
     public static class Structure<TStruct>
         where TStruct : struct
@@ -23,7 +21,7 @@ namespace Platform.Unsafe
         /// </para>
         /// <para>
         /// Возвращает размер неуправляемого типа в байтах.
-        /// Этот свойство делает это без выбрасывания исключений для универсальных типов, как это делают <see cref="Marshal.SizeOf{T}()"/> и <see cref="Marshal.SizeOf(Type)"/>.
+        /// Это свойство делает это без выбрасывания исключений для универсальных типов, как это делают <see cref="Marshal.SizeOf{T}()"/> и <see cref="Marshal.SizeOf(Type)"/>.
         /// </para>
         /// </summary>
         public static int Size
