@@ -12,9 +12,11 @@ namespace Platform.Unsafe
     public unsafe static class StructureExtensions
     {
         /// <summary>
-        /// <para>this process does something</para>
-        /// <para>этот процесс что-то делает</para>
+        /// <para>Returns an array of the type <typeparamref name="TStruct"/> the length of which is equal to the size of the structure.</para>
+        /// <para>Возвращает массив типа <typeparamref name="TStruct"/>, длина которого равна размеру структуры.</para>
         /// </summary>
+        /// <param name="obj"><para>An object of type <typeparamref name="TStruct"/>.</para><para>Объект типа <typeparamref name="TStruct"/>.</para></param>
+        /// <returns><para>The <paramref name="bytes"/></para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static byte[] ToBytes<TStruct>(this ref TStruct obj)
             where TStruct : struct
