@@ -16,7 +16,7 @@ namespace Platform.Unsafe
         /// <para>Zeroes the <paramref name="pointer"/>.</para><para>Обнуляет <paramref name="pointer"/>.</para>
         /// </summary>
         /// <param name="pointer"><para>The pointer.</para><para>Указатель.</para></param>
-        /// <param name="capacity"><para>The capacity of the block.</para><para>Вместимость блока.</para></param>
+        /// <param name="capacity"><para>The capacity of the memory block(in bytes).</para><para>Вместимость блока памяти(в байтах).</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Zero(void* pointer, long capacity)
         {
