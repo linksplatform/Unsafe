@@ -8,19 +8,20 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>Represents the byte array extensions.</para><para>Представляет расширения байтового массива.</para>
+    /// <para>Represents an extension of an array of bytes of the type <typeparamref name="TStruct"/>.</para>
+    /// <para>Представляет расширение массивa байтов типа <typeparamref name="TStruct"/>.</para>
     /// </summary>
     public unsafe static class ByteArrayExtensions
     {
         /// <summary>
-        /// <para>Returns the structure using the specified bytes.</para>
-        /// <para>Возвращает структуру, использующую указанные байты.</para>
+        /// <para>Returns <paramref name="structure"/> when pinned <paramref name="pointer"/> equal to the specified <paramref name="bytes"/> so that it does not move when copying.</para>
+        /// <para>Возвращает <paramref name="structure"/> при закреплённом <paramref name="pointer"/> равный указанным <paramref name="bytes"/>, чтобы не он перемещался при копировании.</para>
         /// </summary>
-        /// <typeparam name="TStruct"><para>Type - structure.</para><para>Тип - структура.</para></typeparam>
+        /// <typeparam name="TStruct"><para>The element`s structure type.</para><para>Тип структуры элемента.</para></typeparam>
         /// <param name="bytes"><para>The bytes.</para><para>Байты.</para></param>
-        /// <param name="nameof(bytes)"><para>String literal.</para><para>Строковый литерал.</para></param>
-        /// <param name="structure"><para>The structure.</para><para>Структура.</para></param>
-        /// <returns><para>The structure.</para><para>Стурктура.</para></returns>
+        /// <param name="nameof(bytes)"><para>The string literal <paramref name="bytes"/>.</para><para>Строковый литерал <paramref name="bytes"/>.</para></param>
+        /// <param name="structure"><para>An array of bytes of the type <typeparamref name="TStruct"/>.</para><para>Массив байтов типа <typeparamref name="TStruct"/>.</para></param>
+        /// <returns><para>The <paramref name="structure"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TStruct ToStructure<TStruct>(this byte[] bytes)
             where TStruct : struct
@@ -35,9 +36,13 @@ namespace Platform.Unsafe
             return structure;
         }
         /// <summary>
-        /// <para>Checks whether the argument meets the criteria.</para><para>Проверяет, соответствует ли аргумент критериям.</para>
+        /// <para>Checks whether the length of <paramref name="array"/> matches the size of the structure of type <typeparamref name="TStruct"/>.</para>
+        /// <para>Проверяет, соответствует ли длина <paramref name="array"/> размеру структуры типа <typeparamref name="TStruct"/>.</para>
         /// </summary>
-        /// <returns><para>Returns true if array length equal to a size of structure instance of TStruct type and false otherwise.</para><para>Возвращает true, если длина массива равна размеру экземпляра структуры типа TStruct, и false в противном случае.</para></returns>
+        /// <returns>
+        /// <para>Returns true if the length of <paramref name="array"/> is equal to the size of an instance of a structure of type <typeparamref name="TStruct"/>, and false otherwise.</para>
+        /// <para>Возвращает true, если длина <paramref name="array"/> равна размеру экземпляра структуры типа <typeparamref name="TStruct"/>, и false в противном случае.</para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static bool HasSameSizeAs<TStruct>(byte[] array) where TStruct : struct => array.Length == Structure<TStruct>.Size;
     }
