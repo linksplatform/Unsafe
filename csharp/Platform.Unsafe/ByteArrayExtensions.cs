@@ -9,7 +9,7 @@ namespace Platform.Unsafe
 {
     /// <summary>
     /// <para>Represents an extension of an array of bytes of the type <typeparamref name="TStruct"/>.</para>
-    /// <para>Представляет расширение массивa байтов типа <typeparamref name="TStruct"/>.</para>
+    /// <para>Представляет расширения массивa байтов типа <typeparamref name="TStruct"/>.</para>
     /// </summary>
     public unsafe static class ByteArrayExtensions
     {
