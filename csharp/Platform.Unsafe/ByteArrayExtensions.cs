@@ -35,14 +35,7 @@ namespace Platform.Unsafe
             }
             return structure;
         }
-        /// <summary>
-        /// <para>Checks whether the length of <paramref name="array"/> matches the size of the structure of type <typeparamref name="TStruct"/>.</para>
-        /// <para>Проверяет, соответствует ли длина <paramref name="array"/> размеру структуры типа <typeparamref name="TStruct"/>.</para>
-        /// </summary>
-        /// <returns>
-        /// <para>Returns true if the length of <paramref name="array"/> is equal to the size of an instance of a structure of type <typeparamref name="TStruct"/>, and false otherwise.</para>
-        /// <para>Возвращает true, если длина <paramref name="array"/> равна размеру экземпляра структуры типа <typeparamref name="TStruct"/>, и false в противном случае.</para>
-        /// </returns>
+        
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static bool HasSameSizeAs<TStruct>(byte[] array) where TStruct : struct => array.Length == Structure<TStruct>.Size;
     }
