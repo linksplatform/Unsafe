@@ -12,11 +12,17 @@ namespace Platform.Unsafe
     public unsafe static class StructureExtensions
     {
         /// <summary>
-        /// <para>Returns an array of the type <typeparamref name="TStruct"/> the length of which is equal to the size of the structure.</para>
-        /// <para>Возвращает массив типа <typeparamref name="TStruct"/>, длина которого равна размеру структуры.</para>
+        /// <para>Converts an array of the type <typeparamref name="TStruct"/> the length of which is equal to the size of the structure.</para>
+        /// <para>Преобразует массив типа <typeparamref name="TStruct"/>, длина которого равна размеру структуры.</para>
         /// </summary>
-        /// <param name="obj"><para>An object of type <typeparamref name="TStruct"/>.</para><para>Объект типа <typeparamref name="TStruct"/>.</para></param>
-        /// <returns><para>The <paramref name="bytes"/></para></returns>
+        /// <param name="obj">
+        /// <para>A structure instance of type <typeparamref name="TStruct"/>.</para>
+        /// <para>Экземпляр структуры типа <typeparamref name="TStruct"/>.</para>
+        /// </param>
+        /// <returns>
+        /// <para>The bytes whose source is an instance of the <paramref name="obj"/> structure.</para>
+        /// <para>Байты, источником которых явлется экземпляр структуры <paramref name="obj"/>.</para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static byte[] ToBytes<TStruct>(this ref TStruct obj)
             where TStruct : struct
