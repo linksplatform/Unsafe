@@ -8,19 +8,23 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe
 {
-    /// <summary><para>Creating a custom memory block via <see cref="Parallel"/>.</para><para>Создание пользовательского блока памяти через <see cref="Parallel"/>.</para>
+    /// <summary><para>Represetns creating a custom memory block via <see cref="Parallel"/>.</para><para>Представляет создание пользовательского блока памяти через <see cref="Parallel"/>.</para>
     /// </summary>
     public static unsafe class MemoryBlock
     {
         /// <summary>
-        /// <para>Zeroes the <paramref name="pointer"/>.</para><para>Обнуляет <paramref name="pointer"/>.</para>
+        /// <para>Zeroes the data pointed to by <paramref name="pointer"/> while only the number of bytes specified in <paramref name="capacity"/> are set to zero.</para>
+        /// <para>Обнуляет данные, на которые указывает <paramref name="pointer"/>, в то время как только количество байтов указанных в <paramref name="capacity"/> устанавливается равным нулю.</para>
         /// </summary>
         /// <param name="pointer"><para>The pointer.</para><para>Указатель.</para></param>
-        /// <param name="capacity"><para>The capacity of the memory block(in bytes).</para><para>Вместимость блока памяти(в байтах).</para></param>
+        /// <param name="capacity">
+        /// <para>The capacity of the memory block (in bytes).</para>
+        /// <para>Вместимость блока памяти (в байтах).</para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Zero(void* pointer, long capacity)
         {
-            //  A way to prevent wasting resources due to Hyper-Threading.
+            // A way to prevent wasting resources due to Hyper-Threading.
             var threads = Environment.ProcessorCount / 2;
             if (threads <= 1)
             {
