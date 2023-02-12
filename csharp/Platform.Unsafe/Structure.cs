@@ -8,8 +8,8 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>Represents a size of a structure of type <typeparamref name="Struct"/>.</para>
-    /// <para>Представляет размер структуры типа <typeparamref name="TStruct"/>.</para>
+    /// <para>Represents a set of helper properties for structures of type <typeparamref name="Struct"/>.</para>
+    /// <para>Представляет набор вспомогательных свойств для структур типа <typeparamref name="TStruct"/>.</para>
     /// </summary>
     public static class Structure<TStruct>
         where TStruct : struct
