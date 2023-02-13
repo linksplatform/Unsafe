@@ -1,113 +1,8 @@
 {
   "homepages": [],
-  "source_base_path": "/home/runner/work/Unsafe/Unsafe",
+  "source_base_path": "/home/runner/work/Unsafe/Unsafe/csharp",
   "xrefmap": "xrefmap.yml",
   "files": [
-    {
-      "type": "Resource",
-      "output": {
-        "resource": {
-          "relative_path": "index.json"
-        }
-      },
-      "is_incremental": false
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "README.md",
-      "output": {
-        ".html": {
-          "relative_path": "README.html",
-          "hash": "h8sbcYO9fKVUeKteJBBRJQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Unsafe.ByteArrayExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Unsafe.ByteArrayExtensions.html",
-          "hash": "x/FI88QcyCmnhZBig0e5WA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Unsafe.IntPtrExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Unsafe.IntPtrExtensions.html",
-          "hash": "gWp7GkJZWMyweORf1qAxtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Unsafe.MemoryBlock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Unsafe.MemoryBlock.html",
-          "hash": "5WfLvgCncKc9ezLzv+lYdw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Unsafe.Structure-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Unsafe.Structure-1.html",
-          "hash": "DCPoNPl6YQzkJJ2B8f5TmQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Unsafe.StructureExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Unsafe.StructureExtensions.html",
-          "hash": "mwC+5th7qM8T+Quok793RQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Platform.Unsafe.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Platform.Unsafe.html",
-          "hash": "OMFtisZozmoQ5Bn1AISIeA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "obj/api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "/+4EgGd+BKahP884+VYCNQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
     {
       "log_codes": [
         "InvalidFileLink"
@@ -117,7 +12,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "hpPZ68PiUKCRo8Qv2VLlBw=="
+          "hash": "+VMuDpqATUiXBbcfHaz7eQ=="
         }
       },
       "is_incremental": false,
@@ -135,18 +30,6 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 1,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 6,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
