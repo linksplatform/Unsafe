@@ -10,7 +10,7 @@ namespace Platform.Unsafe
 {
     /// <summary>
     /// <para>Represents a set of methods for memory blocks.</para>
-    /// <para>Представляет набор меотодов для блока памяти.</para>
+    /// <para>Представляет набор методов для блоков памяти.</para>
     /// </summary>
     public static unsafe class MemoryBlock
     {
