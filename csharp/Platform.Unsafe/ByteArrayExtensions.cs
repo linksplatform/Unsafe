@@ -1,9 +1,9 @@
 using Platform.Exceptions;
 using Platform.Collections;
 using System.Runtime.CompilerServices;
-using static System.Runtime.CompilerServices.Unsafe; 
+using static System.Runtime.CompilerServices.Unsafe;
 
-#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
 namespace Platform.Unsafe
 {
@@ -18,15 +18,15 @@ namespace Platform.Unsafe
         /// <para>Возвращает <paramref name="structure"/>, если длина байтового массива при указанных <paramref name="bytes"/> равна размеру структуры.</para>
         /// </summary>
         /// <typeparam name="TStruct"><para>The element's structure type.</para><para>Тип структуры элемента.</para></typeparam>
-        /// <param name="bytes">
         /// <exeption cref="ArgumentNotEmpty">
         /// <para>Thrown when <paramref name="bytes"/> is empty.</para>
         /// <para>Выбрасывается, когда <paramref name="bytes"/> пустой.</para>
         /// </exeption>
         /// <exeption cref="ArgumentMeetsCriteria">
         /// <para>Thrown when the length of the byte array is not the same as the size of the structure.</para>
-        /// <para>Выбрасывается, когда длина массива байтов не совпадает с размером структуры.</para>
+        /// <para>Выбрасывается, когда длина байтового массива не совпадает с размером структуры.</para>
         /// </exeption>
+        /// <param name="bytes">
         /// <para>An array of bytes that will be converted to <typeparamref name="TStruct"/> type.</para>
         /// <para>Массив байтов, который будет преобразован в тип <typeparamref name="TStruct"/>.</para>
         /// </param>
