@@ -22,13 +22,13 @@ namespace Platform.Unsafe
         /// <para>An array of bytes that will be converted to <typeparamref name="TStruct"/> type.</para>
         /// <para>Массив байтов, который будет преобразован в тип <typeparamref name="TStruct"/>.</para>
         /// </param>
-        /// <exeption cref="ArgumentNotEmpty">
-        /// <para>Thrown when <paramref name="bytes"/> is empty.</para>
-        /// <para>Выбрасывается, когда <paramref name="bytes"/> пустой.</para>
+        /// <exeption cref="ArgumentNullException">
+        /// <para>Thrown when <paramref name="bytes"/> array is empty.</para>
+        /// <para>Выбрасывается, когда массив <paramref name="bytes"/> пустой.</para>
         /// </exeption>
-        /// <exeption cref="ArgumentMeetsCriteria">
-        /// <para>Thrown when the length of the byte array is not the same as the size of the structure.</para>
-        /// <para>Выбрасывается, когда длина байтового массива не совпадает с размером структуры.</para>
+        /// <exeption cref="ArgumentExeption">
+        /// <para>Thrown when the length of the <paramref name="bytes"/> array is not the same as the size of the <typeparamref name="TStruct"/>.</para>
+        /// <para>Выбрасывается, когда длина массива <paramref name="bytes"/> не совпадает с размером <typeparamref name="TStruct"/>.</para>
         /// </exeption>
         /// <returns><para>The structure.</para><para>Структуру.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
