@@ -14,13 +14,13 @@ namespace Platform.Unsafe
     public unsafe static class ByteArrayExtensions
     {
         /// <summary>
-        /// <para>Converts an array <paramref name="bytes"/> into a structure of type <typeparamref name="TStruct"/>.</para>
+        /// <para>Converts the <paramref name="bytes"/> array into a structure of type <typeparamref name="TStruct"/>.</para>
         /// <para>Преобразует массив <paramref name="bytes"/> в структуру типа <typeparamref name="TStruct"/>.</para>
         /// </summary>
         /// <typeparam name="TStruct"><para>The element's structure type.</para><para>Тип структуры элемента.</para></typeparam>
         /// <param name="bytes">
         /// <para>An array of bytes that will be converted to <typeparamref name="TStruct"/> type.</para>
-        /// <para>Массив байтов, который будет преобразован в тип <typeparamref name="TStruct"/>.</para>
+        /// <para>Массив байт, который будет преобразован в тип <typeparamref name="TStruct"/>.</para>
         /// </param>
         /// <exeption cref="ArgumentNullException">
         /// <para>Thrown when <paramref name="bytes"/> array is empty.</para>
@@ -30,7 +30,7 @@ namespace Platform.Unsafe
         /// <para>Thrown when the length of the <paramref name="bytes"/> array is not the same as the size of the <typeparamref name="TStruct"/>.</para>
         /// <para>Выбрасывается, когда длина массива <paramref name="bytes"/> не совпадает с размером <typeparamref name="TStruct"/>.</para>
         /// </exeption>
-        /// <returns><para>The structure.</para><para>Структуру.</para></returns>
+        /// <returns><para>The structure of <typeparamref name="TStruct"/> type converted from the <paramref name="bytes"/> array.</para><para>Структуру типа <typeparamref name="TStruct"/>, конвертированную из массива <paramref name="bytes"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TStruct ToStructure<TStruct>(this byte[] bytes)
             where TStruct : struct
