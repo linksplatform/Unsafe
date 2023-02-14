@@ -8,31 +8,29 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>
-    /// Represents the byte array extensions.
-    /// </para>
-    /// <para></para>
+    /// <para>Represents a set of extension methods for byte arrays.</para>
+    /// <para>Представляет набор методов расширения массивов байт.</para>
     /// </summary>
     public unsafe static class ByteArrayExtensions
     {
         /// <summary>
-        /// <para>
-        /// Returns the structure using the specified bytes.
-        /// </para>
-        /// <para></para>
+        /// <para>Converts the <paramref name="bytes"/> array into a structure of type <typeparamref name="TStruct"/>.</para>
+        /// <para>Преобразует массив <paramref name="bytes"/> в структуру типа <typeparamref name="TStruct"/>.</para>
         /// </summary>
-        /// <typeparam name="TStruct">
-        /// <para>The struct.</para>
-        /// <para></para>
-        /// </typeparam>
+        /// <typeparam name="TStruct"><para>The element's structure type.</para><para>Тип структуры элемента.</para></typeparam>
         /// <param name="bytes">
-        /// <para>The bytes.</para>
-        /// <para></para>
+        /// <para>An array of bytes that will be converted to <typeparamref name="TStruct"/> type.</para>
+        /// <para>Массив байт, который будет преобразован в тип <typeparamref name="TStruct"/>.</para>
         /// </param>
-        /// <returns>
-        /// <para>The structure.</para>
-        /// <para></para>
-        /// </returns>
+        /// <exeption cref="ArgumentNullException">
+        /// <para>Thrown when <paramref name="bytes"/> array is empty.</para>
+        /// <para>Выбрасывается, когда массив <paramref name="bytes"/> пустой.</para>
+        /// </exeption>
+        /// <exeption cref="ArgumentExeption">
+        /// <para>Thrown when the length of the <paramref name="bytes"/> array is not the same as the size of the <typeparamref name="TStruct"/>.</para>
+        /// <para>Выбрасывается, когда длина массива <paramref name="bytes"/> не совпадает с размером <typeparamref name="TStruct"/>.</para>
+        /// </exeption>
+        /// <returns><para>The structure of <typeparamref name="TStruct"/> type converted from the <paramref name="bytes"/> array.</para><para>Структуру типа <typeparamref name="TStruct"/>, конвертированную из массива <paramref name="bytes"/>.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TStruct ToStructure<TStruct>(this byte[] bytes)
             where TStruct : struct
