@@ -9,26 +9,19 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>
-    /// Represents the memory block.
-    /// </para>
-    /// <para></para>
+    /// <para>Represents a set of methods for memory blocks.</para>
+    /// <para>Представляет набор методов для блоков памяти.</para>
     /// </summary>
     public static unsafe class MemoryBlock
     {
         /// <summary>
-        /// <para>
-        /// Zeroes the pointer.
-        /// </para>
-        /// <para></para>
+        /// <para>Zeroes the number of bytes specified in <paramref name="capacity"/> starting from <paramref name="pointer"/>.</para>
+        /// <para>Обнуляет количество байтов, указанное в <paramref name="capacity"/>, начиная с <paramref name="pointer"/>.</para>
         /// </summary>
-        /// <param name="pointer">
-        /// <para>The pointer.</para>
-        /// <para></para>
-        /// </param>
+        /// <param name="pointer"><para>The pointer.</para><para>Указатель.</para></param>
         /// <param name="capacity">
-        /// <para>The capacity.</para>
-        /// <para></para>
+        /// <para>The capacity of the memory block (in bytes).</para>
+        /// <para>Вместимость блока памяти (в байтах).</para>
         /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Zero(void* pointer, long capacity)
@@ -47,6 +40,7 @@ namespace Platform.Unsafe
                 Parallel.ForEach(Partitioner.Create(0L, capacity), new ParallelOptions { MaxDegreeOfParallelism = threads }, range => ZeroBlock(pointer, range.Item1, range.Item2));
             }
         }
+
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static void ZeroBlock(void* pointer, long from, long to)
         {
