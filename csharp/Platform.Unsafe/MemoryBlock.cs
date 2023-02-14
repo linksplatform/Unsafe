@@ -9,8 +9,8 @@ using static System.Runtime.CompilerServices.Unsafe;
 namespace Platform.Unsafe
 {
     /// <summary>
-    /// <para>Represents a custom memory block.</para>
-    /// <para>Представляет пользовательский блок памяти.</para>
+    /// <para>Represents a set of methods for memory blocks.</para>
+    /// <para>Представляет набор меотодов для блока памяти.</para>
     /// </summary>
     public static unsafe class MemoryBlock
     {
