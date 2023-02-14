@@ -14,8 +14,8 @@ namespace Platform.Unsafe
     public unsafe static class ByteArrayExtensions
     {
         /// <summary>
-        /// <para>Returns <paramref name="structure"/> if the length of the byte array with the specified <paramref name="bytes"/> is equal to the size of the <typeparamref name="TStruct"/>.</para>
-        /// <para>Возвращает <paramref name="structure"/>, если длина байтового массива при указанных <paramref name="bytes"/> равна размеру структуры.</para>
+        /// <para>Converts an array <paramref name="bytes"/> into a structure of type <typeparamref name="TStruct"/>.</para>
+        /// <para>Преобразует массив <paramref name="bytes"/> в структуру типа <typeparamref name="TStruct"/>.</para>
         /// </summary>
         /// <typeparam name="TStruct"><para>The element's structure type.</para><para>Тип структуры элемента.</para></typeparam>
         /// <param name="bytes">
