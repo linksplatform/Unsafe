@@ -8,13 +8,15 @@ using static System.Runtime.CompilerServices.Unsafe;
 
 namespace Platform.Unsafe
 {
-    /// <summary><para>Represetns creating a custom memory block via <see cref="Parallel"/>.</para><para>Представляет создание пользовательского блока памяти через <see cref="Parallel"/>.</para>
+    /// <summary>
+    /// <para>Represents the creation of a custom memory block with a two-channel architecture.</para>
+    /// <para>Представляет создание пользовательского блока памяти с двухканальной архитектуры.</para>
     /// </summary>
     public static unsafe class MemoryBlock
     {
         /// <summary>
-        /// <para>Zeroes the data pointed to by <paramref name="pointer"/> while only the number of bytes specified in <paramref name="capacity"/> are set to zero.</para>
-        /// <para>Обнуляет данные, на которые указывает <paramref name="pointer"/>, в то время как только количество байтов указанных в <paramref name="capacity"/> устанавливается равным нулю.</para>
+        /// <para>Zeroes the number of bytes specified in <paramref name="capacity"/> starting from <paramref name="pointer"/>.</para>
+        /// <para>Обнуляет количество байтов, указанное в <paramref name="capacity"/>, начиная с <paramref name="pointer"/>.</para>
         /// </summary>
         /// <param name="pointer"><para>The pointer.</para><para>Указатель.</para></param>
         /// <param name="capacity">
