@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Unsafe</AssemblyTitle>
     <VersionPrefix>0.6.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFramework>net7</TargetFramework>
+    <TargetFramework>net8</TargetFramework>
     <AssemblyName>Platform.Unsafe</AssemblyName>
     <PackageId>Platform.Unsafe</PackageId>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -24,8 +24,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Numbers dependency updated from 0.7.0 to 0.9.0.
-Code documentation is added.</PackageReleaseNotes>
+    <PackageReleaseNotes>Update target framework from net7 to net8.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   
