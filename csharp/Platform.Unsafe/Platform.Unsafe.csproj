@@ -39,6 +39,7 @@
   <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
     <PackageReference Include="Platform.Numbers" Version="0.9.0" />
+    <PackageReference Include="System.Management" Version="8.0.0" Condition="'$(TargetFramework)' == 'net8.0' OR '$(TargetFramework)' == 'net8'" />
   </ItemGroup>
 
 </Project>
