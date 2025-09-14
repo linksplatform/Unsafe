@@ -44,5 +44,8 @@ namespace Platform.Unsafe.Benchmarks
                 MemoryBlock.Zero(pointer, _array.Length);
             }
         }
+
+        [Benchmark]
+        public void GetMemoryChannelCount() => _ = MemoryBlock.MemoryChannelCount;
     }
 }
